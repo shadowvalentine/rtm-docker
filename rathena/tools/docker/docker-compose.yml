@@ -35,11 +35,12 @@ services:
             context: .
             dockerfile: Dockerfile
         environment:
-            BUILDER_CONFIGURE: "--enable-packetver=20200401"
+            BUILDER_CONFIGURE: "--enable-packetver=20200902"
     
     login:
         image: "rathena:local"
         container_name: "rathena_login"
+        user: nonroot
         command: sh -c "/bin/wait-for db:3306 -- /rathena/login-server"
         ports:
             - "6900:6900" # login server
@@ -60,6 +61,7 @@ services:
     char:
         image: "rathena:local"
         container_name: "rathena_char"
+        user: nonroot
         command: sh -c "/bin/wait-for db:3306 -- /rathena/char-server"
         ports:
             - "6121:6121" # char server
@@ -79,6 +81,7 @@ services:
     map:
         image: "rathena:local"
         container_name: "rathena_map"
+        user: nonroot
         command: sh -c "/bin/wait-for db:3306 -- /rathena/map-server"
         ports:
             - "5121:5121" # map server
