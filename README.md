@@ -7,15 +7,20 @@ rAthena repository [here](https://github.com/rathena/rathena)
 
 My instructions:
 
+- Have Docker Desktop running
+- Pull and run `./run.sh`
+
+Optional:
+
+- To modify the database, you will require a MySQL client. I used `mysql-shell` 
+
+Archived instructions:
+
 - Download the files from the "Original files" link above. 
 - Place folder 2 ("02 emu rathena") in the `rathena` folder.
 - Download the `prm.sql` file [here](todo)
 - Place it in `rathena/sql-files`
 - Run `./run.sh`
-
-Optional:
-
-- To modify the database, you will require a MySQL client. I used `mysql-shell` 
 
 Original setup instructions: 
 
