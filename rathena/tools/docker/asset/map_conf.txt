@@ -11,7 +11,7 @@ char_ip: char
 // The map server listens on the interface with this IP address.
 // NOTE: This allows you to run multiple servers on multiple interfaces
 // while using the same ports for each server.
-//bind_ip: 127.0.0.1
+bind_ip: 0.0.0.0
 
 // Character Server Port
 char_port: 6121
@@ -23,3 +23,11 @@ map_ip: map
 
 // Map Server Port
 map_port: 5121
+
+//Makes server log selected message types to a file in the /log/ folder
+//1: Log Warning Messages
+//2: Log Error and SQL Error messages.
+//4: Log Debug Messages
+//Example: "console_msg_log: 7" logs all 3 kinds
+//Messages logged by this overrides console_silent setting
+console_msg_log: 7

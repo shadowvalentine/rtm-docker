@@ -36,3 +36,11 @@ log_db_pw: morrocpr123
 log_db_db: rathena_re_db
 log_codepage:
 log_login_db: loginlog
+
+//Makes server log selected message types to a file in the /log/ folder
+//1: Log Warning Messages
+//2: Log Error and SQL Error messages.
+//4: Log Debug Messages
+//Example: "console_msg_log: 7" logs all 3 kinds
+//Messages logged by this overrides console_silent setting
+console_msg_log: 7
