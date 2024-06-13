@@ -6,10 +6,20 @@ rAthena Docker documentation [here](https://rathena.github.io/user-guides/instal
 
 rAthena repository [here](https://github.com/rathena/rathena)
 
+Credits: 
+- mokona (echomokona): Thanks for all the help testing and troubleshooting these configs!
+
+Requirements:
+
+- Linux host
+- Docker for Linux
+
 My instructions:
 
-- Have Docker Desktop running
-- Pull and run `./rebuild-and-run.sh`
+- Navigate to `rathena/tools/docker/asset`
+- !! Important !! In each of the `*_conf.txt` files, update `<< HOST IP GOES HERE >>`  with the public-facing IP address of the server
+  - This is required to allow clients to connect
+- Run `./rebuild-and-run.sh`
 
 Note: 
 
