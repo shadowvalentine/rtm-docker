@@ -8,7 +8,8 @@ rAthena repository [here](https://github.com/rathena/rathena)
 My instructions:
 
 - Have Docker Desktop running
-- Pull and run `./run.sh`
+- For first time, run `./build-and-run.sh`
+- Otherwise run `./restart.sh`
 
 Optional:
 
