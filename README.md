@@ -9,7 +9,11 @@ rAthena repository [here](https://github.com/rathena/rathena)
 My instructions:
 
 - Have Docker Desktop running
-- Pull and run `./run.sh`
+- Pull and run `./rebuild-and-run.sh`
+
+Note: 
+
+- This is confirmed **not working** with WSL2. Please host it on Docker for Linux.
 
 Optional:
 
