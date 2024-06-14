@@ -1,0 +1,23 @@
+// The login server listens on the interface with this IP address.
+// NOTE: This allows you to run multiple servers on multiple interfaces
+// while using the same ports for each server.
+bind_ip: <<HOST IP GOES HERE>>
+ 
+// Login Server Port
+login_port: 6900
+
+// Can you use _M/_F to make new accounts on the server?
+// Note: This only works if client side password encryption is not enabled.
+new_account: yes
+
+// Store passwords as MD5 hashes instead of plain text?
+// NOTE: Will not work with clients that use <passwordencrypt>
+use_MD5_passwords: yes
+
+//Makes server log selected message types to a file in the /log/ folder
+//1: Log Warning Messages
+//2: Log Error and SQL Error messages.
+//4: Log Debug Messages
+//Example: "console_msg_log: 7" logs all 3 kinds
+//Messages logged by this overrides console_silent setting
+console_msg_log: 7
