@@ -28,6 +28,7 @@ services:
             - "./asset/inter_conf.txt:/rathena/conf/import/inter_conf.txt" # load db connection
             - "./asset/char_conf.txt:/rathena/conf/import/char_conf.txt"   #localdev login-char relation
             - "./asset/map_conf.txt:/rathena/conf/import/map_conf.txt"     #localdev char-map relation
+            - "./asset/login_conf.txt:/rathena/conf/import/login_conf.txt"     #localdev login-map relation
         init: true # helps with signal forwarding and process reaping
         tty: true
         stdin_open: true
@@ -48,6 +49,7 @@ services:
             - "./asset/inter_conf.txt:/rathena/conf/import/inter_conf.txt" # load db connection
             - "./asset/char_conf.txt:/rathena/conf/import/char_conf.txt"   #localdev login-char relation
             - "./asset/map_conf.txt:/rathena/conf/import/map_conf.txt"     #localdev char-map relation
+            - "./asset/login_conf.txt:/rathena/conf/import/login_conf.txt"     #localdev login-map relation
         init: true # helps with signal forwarding and process reaping
         tty: true
         stdin_open: true
@@ -68,6 +70,7 @@ services:
             - "./asset/inter_conf.txt:/rathena/conf/import/inter_conf.txt" # load db connection
             - "./asset/char_conf.txt:/rathena/conf/import/char_conf.txt"   #localdev login-char relation
             - "./asset/map_conf.txt:/rathena/conf/import/map_conf.txt"     #localdev char-map relation
+            - "./asset/login_conf.txt:/rathena/conf/import/login_conf.txt"     #localdev login-map relation
         init: true # helps with signal forwarding and process reaping
         tty: true
         stdin_open: true
@@ -87,6 +90,7 @@ services:
             - "./asset/inter_conf.txt:/rathena/conf/import/inter_conf.txt" # load db connection
             - "./asset/char_conf.txt:/rathena/conf/import/char_conf.txt"   #localdev login-char relation
             - "./asset/map_conf.txt:/rathena/conf/import/map_conf.txt"     #localdev char-map relation
+            - "./asset/login_conf.txt:/rathena/conf/import/login_conf.txt"     #localdev login-map relation
         init: true # helps with signal forwarding and process reaping
         tty: true
         stdin_open: true
