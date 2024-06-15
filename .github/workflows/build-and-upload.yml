@@ -27,38 +27,25 @@ jobs:
       - name: Build action step
         id: package
         working-directory: ${{ env.workfolder }}
-        run: pwd && ls -l && ./builder.sh
+        run: ./builder.sh
+      
+      - run: |
+          mkdir packaged-rtm && \
+          mv ${{ env.workfolder }}/login-server \
+          ${{ env.workfolder }}/map-server \
+          ${{ env.workfolder }}/char-server \
+          ${{ env.workfolder }}/conf/ \
+          ${{ env.workfolder }}/db/ \
+          ${{ env.workfolder }}/npc/ \
+          packaged-rtm/
 
-      - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v4
+      - uses: shallwefootball/s3-upload-action@master
+        name: Upload S3
+        id: S3
         with:
-          name: packaged-rtm
-          path: |
-            ${{ env.workfolder }}/login-server
-            ${{ env.workfolder }}/map-server
-            ${{ env.workfolder }}/char-server
-            ${{ env.workfolder }}/conf/
-            ${{ env.workfolder }}/db/
-            ${{ env.workfolder }}/npc/
-
-  upload:
-    needs: build
-    runs-on: ubuntu-latest
-    environment: Dev
-    permissions:
-      id-token: write
-      contents: read
-    steps:
-    - uses: actions/download-artifact@v4
-      with:
-        name: packaged-rtm
-    - uses: shallwefootball/s3-upload-action@master
-      name: Upload S3
-      id: S3
-      with:
-        working-directory: $GITHUB_WORKSPACE
-        aws_key_id: ${{ secrets.AWS_KEY_ID }}
-        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-        aws_bucket: ${{ secrets.AWS_BUCKET }}
-        source_dir: packaged-rtm
-        destination_dir: packaged-rtm
+          working-directory: $GITHUB_WORKSPACE
+          aws_key_id: ${{ secrets.AWS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          aws_bucket: ${{ secrets.AWS_BUCKET }}
+          source_dir: ${{ env.workfolder }}/packaged-rtm
+          destination_dir: packaged-rtm
