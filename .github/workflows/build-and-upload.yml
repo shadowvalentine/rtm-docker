@@ -31,19 +31,18 @@ jobs:
       
       - run: |
           mkdir packaged-rtm && \
-          mv ${{ env.workfolder }}/login-server \
-          ${{ env.workfolder }}/map-server \
-          ${{ env.workfolder }}/char-server \
-          ${{ env.workfolder }}/conf/ \
-          ${{ env.workfolder }}/db/ \
-          ${{ env.workfolder }}/npc/ \
-          packaged-rtm/
+            mv ${{ env.workfolder }}/login-server \
+            ${{ env.workfolder }}/map-server \
+            ${{ env.workfolder }}/char-server \
+            ${{ env.workfolder }}/conf/ \
+            ${{ env.workfolder }}/db/ \
+            ${{ env.workfolder }}/npc/ \
+            packaged-rtm/
 
       - uses: shallwefootball/s3-upload-action@master
         name: Upload S3
         id: S3
         with:
-          working-directory: $GITHUB_WORKSPACE
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: ${{ secrets.AWS_BUCKET }}
