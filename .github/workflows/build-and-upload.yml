@@ -29,7 +29,8 @@ jobs:
         working-directory: ${{ env.workfolder }}
         run: ./builder.sh
       
-      - run: |
+      - name: Package the required files in a folder
+        run: |
           mkdir packaged-rtm && \
             mv ${{ env.workfolder }}/login-server \
             ${{ env.workfolder }}/map-server \
