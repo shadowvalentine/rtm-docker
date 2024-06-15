@@ -7,7 +7,7 @@ on:
       - aws
   
 env:
-  workfolder: $GITHUB_WORKSPACE/rathena
+  workfolder: rathena
 
 jobs:
   build:
