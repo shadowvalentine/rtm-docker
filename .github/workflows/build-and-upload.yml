@@ -23,9 +23,8 @@ jobs:
 
       - uses: actions/checkout@v2
         name: Checkout Repository
-      
-      - name: chmod
-        run: chmod -R +x ./.github
+
+      - run: pwd && ls -l
 
       - name: Build action step
         id: package
