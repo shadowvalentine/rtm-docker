@@ -1,0 +1,60 @@
+name: Build and Deploy
+
+on:
+  workflow_dispatch: {}
+
+env:
+  applicationfolder: rtm-servers
+  AWS_REGION: ap-southeast-2
+
+jobs:
+  build:
+    name: Build and Package
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout Repository
+
+      - name: chmod
+        run: chmod -R +x ./.github
+
+      - name: Build action step
+        id: package
+        uses: ./.github/actions
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: packaged-rtm/
+          path: |
+            ${{ github.workspace }}/login-server
+            ${{ github.workspace }}/map-server
+            ${{ github.workspace }}/char-server
+            ${{ github.workspace }}/conf/
+            ${{ github.workspace }}/db/
+            ${{ github.workspace }}/npc/
+
+  upload:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: Dev
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/download-artifact@v4
+      with:
+        name: packaged-rtm
+    - uses: shallwefootball/s3-upload-action@master
+      name: Upload S3
+      id: S3
+      with:
+        aws_key_id: ${{ secrets.AWS_KEY_ID }}
+        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+        aws_bucket: ${{ secrets.AWS_BUCKET }}
+        source_dir: 'packaged-rtm'
+        destination_dir: 'packaged-rtm'
