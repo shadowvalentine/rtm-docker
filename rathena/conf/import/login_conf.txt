@@ -1,7 +1,7 @@
 // The login server listens on the interface with this IP address.
 // NOTE: This allows you to run multiple servers on multiple interfaces
 // while using the same ports for each server.
-bind_ip: <<HOST IP GOES HERE>>
+bind_ip: 52.65.198.134
  
 // Login Server Port
 login_port: 6900

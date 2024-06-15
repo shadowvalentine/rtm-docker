@@ -34,7 +34,7 @@ jobs:
         run: chmod +x  ${{ env.workfolder }}/login-server && chmod +x  ${{ env.workfolder }}/login-server && chmod +x  ${{ env.workfolder }}/login-server
       
       - name: Package the required files in an archive
-        run: mkdir packaged-rtm && mv ${{ env.workfolder }}/login-server ${{ env.workfolder }}/map-server ${{ env.workfolder }}/char-server ${{ env.workfolder }}/conf/ ${{ env.workfolder }}/db/ ${{ env.workfolder }}/npc/ packaged-rtm/ && tar -zcvf packaged-rtm.tar.gz packaged-rtm
+        run: tar -zcvf packaged-rtm.tar.gz ${{ env.workfolder }}
       
       - name: Place the archive in a folder to upload
         run: mkdir compressed && mv packaged-rtm.tar.gz compressed
