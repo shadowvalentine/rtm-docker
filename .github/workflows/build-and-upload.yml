@@ -26,7 +26,7 @@ jobs:
 
       - name: Build action step
         id: package
-        working-directory: rathena/
+        working-directory: ${{ env.workfolder }}
         run: pwd && ls -l && ./builder.sh
 
       - name: Upload Build Artifacts
@@ -34,12 +34,12 @@ jobs:
         with:
           name: packaged-rtm/
           path: |
-            login-server
-            map-server
-            char-server
-            conf/
-            db/
-            npc/
+            ${{ env.workfolder }}/login-server
+            ${{ env.workfolder }}/map-server
+            ${{ env.workfolder }}/char-server
+            ${{ env.workfolder }}/conf/
+            ${{ env.workfolder }}/db/
+            ${{ env.workfolder }}/npc/
 
   upload:
     needs: build
