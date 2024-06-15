@@ -31,7 +31,10 @@ jobs:
         run: ./builder.sh
       
       - name: Package the required files in an archive
-        run: mkdir packaged-rtm && mv ${{ env.workfolder }}/login-server ${{ env.workfolder }}/map-server ${{ env.workfolder }}/char-server ${{ env.workfolder }}/conf/ ${{ env.workfolder }}/db/ ${{ env.workfolder }}/npc/ packaged-rtm/ && tar -zcvf packaged-rtm.tar.gz packaged-rtm && ls -l
+        run: mkdir packaged-rtm && mv ${{ env.workfolder }}/login-server ${{ env.workfolder }}/map-server ${{ env.workfolder }}/char-server ${{ env.workfolder }}/conf/ ${{ env.workfolder }}/db/ ${{ env.workfolder }}/npc/ packaged-rtm/ && tar -zcvf packaged-rtm.tar.gz packaged-rtm
+      
+      - name: Place the archive in a folder to upload
+        run: mkdir compressed && mv packaged-rtm.tar.gz compressed
 
       - uses: shallwefootball/s3-upload-action@master
         name: Upload S3
@@ -40,5 +43,5 @@ jobs:
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: ${{ secrets.AWS_BUCKET }}
-          source_dir: packaged-rtm.tar.gz
-          destination_dir: packaged-rtm
+          source_dir: compressed
+          destination_dir: compressed-rtm
