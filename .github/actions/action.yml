@@ -1,5 +1,0 @@
-name: 'Build rAthena Servers'
-description: Creates a docker container with required packages to compile and make the rAthena servers
-runs:
-  using: docker
-  image: Dockerfile
