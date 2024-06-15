@@ -7,7 +7,7 @@ on:
       - aws
   
 env:
-  workfolder: rathena
+  workfolder: rathena/
 
 jobs:
   build:
@@ -24,24 +24,22 @@ jobs:
       - uses: actions/checkout@v2
         name: Checkout Repository
 
-      - run: pwd && ls -l
-
       - name: Build action step
         id: package
-        working-directory: ${{ env.workfolder }}
-        run: ./builder.sh
+        working-directory: rathena/
+        run: pwd && ls -l && ./builder.sh
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: packaged-rtm/
           path: |
-            ${{ env.workfolder }}/login-server
-            ${{ env.workfolder }}/map-server
-            ${{ env.workfolder }}/char-server
-            ${{ env.workfolder }}/conf/
-            ${{ env.workfolder }}/db/
-            ${{ env.workfolder }}/npc/
+            login-server
+            map-server
+            char-server
+            conf/
+            db/
+            npc/
 
   upload:
     needs: build
