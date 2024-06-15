@@ -7,7 +7,7 @@ on:
       - aws
   
 env:
-  workfolder: rathena/
+  workfolder: rathena
 
 jobs:
   build:
@@ -30,8 +30,8 @@ jobs:
         working-directory: ${{ env.workfolder }}
         run: ./builder.sh
       
-      - name: Package the required files in a folder
-        run: mkdir packaged-rtm && mv ${{ env.workfolder }}/login-server ${{ env.workfolder }}/map-server ${{ env.workfolder }}/char-server ${{ env.workfolder }}/conf/ ${{ env.workfolder }}/db/ ${{ env.workfolder }}/npc/ packaged-rtm/ && tar -zcvf packaged-rtm.tar.gz packaged-rtm
+      - name: Package the required files in an archive
+        run: mkdir packaged-rtm && mv ${{ env.workfolder }}/login-server ${{ env.workfolder }}/map-server ${{ env.workfolder }}/char-server ${{ env.workfolder }}/conf/ ${{ env.workfolder }}/db/ ${{ env.workfolder }}/npc/ packaged-rtm/ && tar -zcvf packaged-rtm.tar.gz packaged-rtm && ls -l
 
       - uses: shallwefootball/s3-upload-action@master
         name: Upload S3
@@ -40,5 +40,5 @@ jobs:
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: ${{ secrets.AWS_BUCKET }}
-          source_dir: packaged-rtm
+          source_dir: packaged-rtm.tar.gz
           destination_dir: packaged-rtm
