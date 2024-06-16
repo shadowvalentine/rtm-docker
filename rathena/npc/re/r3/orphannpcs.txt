@@ -1112,16 +1112,16 @@ va_orpha,272,363,1	script	Memory Fountain	844,{
 	end;
 	case 2:
 		if (zeny >= .resetprice) {
-		resetstatus();
-		set zeny,zeny-.resetprice;
-		specialeffect2 EF_BLESSING;
-		close2;
-		end;
+			resetstatus();
+			set zeny,zeny-.resetprice;
+			specialeffect2 EF_BLESSING;
+			close2;
+			end;
+			}
+			mes "["+strcharinfo(0)+"]";
+			mes "I don't have enough zeny.";
+			close;
 		}
-		mes "["+strcharinfo(0)+"]";
-		mes "I don't have enough zeny.";
-		close;
-	}
 	}
 	switch(select("Let me think about it.:Look deep inside.(Reset Stats)->"+ .resetprice +"z:Look near the surface.(Reset Skills)->"+ .resetprice +"z")) {
 	case 1:
@@ -1505,7 +1505,7 @@ va_orpha,383,205,4	script	Mary Cenia#orphanage	10122,{
 			break;
 		case 2:
 			mes .@npc$;
-			mes "I had a wonderful daughter called Egnigem, and those M*@¨#!@f*&¨%$# at Rekenber took her away and did horrible things, I'm F*$&#@ glad they got what they deserved!";
+			mes "I had a wonderful daughter called Egnigem, and those M*@ï¿½#!@f*&ï¿½%$# at Rekenber took her away and did horrible things, I'm F*$&#@ glad they got what they deserved!";
 			next;
 			mes .@npc$;
 			mes "Cooking makes me calm. Sometimes. So I cook for kids, since I can't throw plates at them.";

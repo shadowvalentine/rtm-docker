@@ -1,4 +1,4 @@
 log_filter: 1
 // Log CHAT (Global, Whisper, Party, Guild, Main chat, Clan) (Note 3)
 // log_chat: 63 = logs everything
-log_chat: 63
+log_chat: 11

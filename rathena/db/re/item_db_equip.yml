@@ -113135,6 +113135,21 @@ Body:
         end;
       }
       setlook LOOK_CLOTHES_COLOR, 0;
+  - Id: 24088
+    AegisName: Medic_Manual_
+    Name: Medic ManualX
+    Type: Shadowgear
+    Buy: 5000
+    Weight: 100
+    Locations:
+      Shadow_Right_Accessory: true
+    Flags:
+      DropEffect: PURPLE_PILLAR
+    Script: |
+      if (BaseLevel >=50){
+        bonus bMdef,2;
+        skill "AL_HEAL",10;
+      }
   - Id: 24089
     AegisName: Borrowed_Time_A
     Name: Borrowed Time A

@@ -2,10 +2,12 @@ name: Build and Deploy
 
 on:
   workflow_dispatch: {}
-
+  push: 
+    branches:
+      - main
+  
 env:
-  applicationfolder: rtm-servers
-  AWS_REGION: ap-southeast-2
+  workfolder: rathena
 
 jobs:
   build:
@@ -15,46 +17,29 @@ jobs:
       id-token: write
       contents: read
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         name: Checkout Repository
-
-      - name: chmod
-        run: chmod -R +x ./.github
 
       - name: Build action step
         id: package
-        uses: ./.github/actions
+        working-directory: ${{ env.workfolder }}
+        run: ./builder.sh
+      
+      - name: Update permissions
+        run: chmod +x  ${{ env.workfolder }}/login-server && chmod +x  ${{ env.workfolder }}/login-server && chmod +x  ${{ env.workfolder }}/login-server
+      
+      - name: Package the required files in an archive
+        run: mkdir packaged-rtm && mkdir packaged-rtm/log && mv ${{ env.workfolder }}/login-server ${{ env.workfolder }}/map-server ${{ env.workfolder }}/char-server ${{ env.workfolder }}/conf/ ${{ env.workfolder }}/db/ ${{ env.workfolder }}/npc/ packaged-rtm/ && tar -zcvf packaged-rtm.tar.gz packaged-rtm
+      
+      - name: Place the archive in a folder to upload
+        run: mkdir compressed && mv packaged-rtm.tar.gz compressed
 
-      - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v4
+      - uses: shallwefootball/s3-upload-action@master
+        name: Upload S3
+        id: S3
         with:
-          name: packaged-rtm/
-          path: |
-            ${{ github.workspace }}/login-server
-            ${{ github.workspace }}/map-server
-            ${{ github.workspace }}/char-server
-            ${{ github.workspace }}/conf/
-            ${{ github.workspace }}/db/
-            ${{ github.workspace }}/npc/
-
-  upload:
-    needs: build
-    runs-on: ubuntu-latest
-    environment: Dev
-    permissions:
-      id-token: write
-      contents: read
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/download-artifact@v4
-      with:
-        name: packaged-rtm
-    - uses: shallwefootball/s3-upload-action@master
-      name: Upload S3
-      id: S3
-      with:
-        aws_key_id: ${{ secrets.AWS_KEY_ID }}
-        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-        aws_bucket: ${{ secrets.AWS_BUCKET }}
-        source_dir: 'packaged-rtm'
-        destination_dir: 'packaged-rtm'
+          aws_key_id: ${{ secrets.AWS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          aws_bucket: ${{ secrets.AWS_BUCKET }}
+          source_dir: compressed
+          destination_dir: compressed-rtm
