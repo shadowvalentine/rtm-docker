@@ -18,9 +18,6 @@ jobs:
       contents: read
     steps:
       - uses: jirutka/setup-alpine@v1.2.0
-        with:
-          branch: v3.18
-          packages: wget git cmake make gcc g++ gdb zlib-dev mariadb-dev ca-certificates linux-headers bash valgrind netcat-openbsd
 
       - uses: actions/checkout@v2
         name: Checkout Repository

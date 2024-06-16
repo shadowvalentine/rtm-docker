@@ -41,7 +41,7 @@ services:
     login:
         image: "rathena:local"
         container_name: "rathena_login"
-        command: sh -c "/bin/wait-for db:3306 -- /rathena/login-server"
+        command: /bin/bash
         ports:
             - "6900:6900" # login server
         volumes:
