@@ -1,7 +1,7 @@
 // The login server listens on the interface with this IP address.
 // NOTE: This allows you to run multiple servers on multiple interfaces
 // while using the same ports for each server.
-bind_ip: 52.65.198.134
+bind_ip: rtm-nlb-b4c24c5d69b43d73.elb.ap-southeast-2.amazonaws.com
  
 // Login Server Port
 login_port: 6900
