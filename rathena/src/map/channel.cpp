@@ -111,7 +111,7 @@ struct Channel *channel_create_simple(char *name, char *pass, enum Channel_Type 
 		safestrncpy(tmp_chan.alias, name, sizeof(tmp_chan.name));
 		tmp_chan.type = CHAN_TYPE_PUBLIC;
 		tmp_chan.opt = CHAN_OPT_BASE;
-		tmp_chan.msg_delay = 500;
+		tmp_chan.msg_delay = 1000;
 		tmp_chan.color = channel_getColor("Default");
 		break;
 	case CHAN_TYPE_PRIVATE:
