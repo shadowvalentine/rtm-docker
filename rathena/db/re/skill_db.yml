@@ -5788,7 +5788,7 @@ Body:
     HitCount: 1
   - Id: 197
     Name: NPC_EMOTION
-    Description: Emotion
+    Description: ''
     MaxLevel: 10
     TargetType: Self
     DamageFlags:
