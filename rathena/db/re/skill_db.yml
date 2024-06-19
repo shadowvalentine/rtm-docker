@@ -5788,7 +5788,7 @@ Body:
     HitCount: 1
   - Id: 197
     Name: NPC_EMOTION
-    Description: Emotion
+    Description: ''
     MaxLevel: 10
     TargetType: Self
     DamageFlags:
@@ -17964,7 +17964,7 @@ Body:
       AllowOnWarg: true
       AllowOnMado: true
     Hit: Single
-    SplashArea: 3
+    SplashArea: 5
     Requires:
       SpCost: 1
   - Id: 1014

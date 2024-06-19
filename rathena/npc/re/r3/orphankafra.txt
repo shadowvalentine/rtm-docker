@@ -30,50 +30,50 @@ va_orpha,265,303,4	script	Kafra Allysia	894,{
 	next;
 	switch(select("Refill Elixir:Save:Use Storage:Teleport:Tell me about yourself:Nothing")) {
 	case 1:
-	if (achiev4 ==0 ){
-	achievementcomplete(200024);
-	set achiev4,1;
-	}
+		if (achiev4 ==0) {
+			achievementcomplete(200024);
+			set achiev4,1;
+		}
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
     getitem 520,3;
     if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_GARMENT) == 2576){
-    getitem 520,3;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
     }
-	mes "[Kafra Allysia]";
+		mes "[Kafra Allysia]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back my ring!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back my ring!";
+		}
+		close2;
     cutin "",255;
     break; 
 	case 2:

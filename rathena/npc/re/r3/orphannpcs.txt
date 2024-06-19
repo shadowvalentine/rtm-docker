@@ -1034,78 +1034,84 @@ va_orpha,21,266,5	script	Horacio Alt-Eisen#orphanage	63,{
 }
 
 va_orpha,272,363,1	script	Memory Fountain	844,{
-	if (xachiev4 ==0 ){
+	if (xachiev4 == 0) {
 		achievementcomplete(200096);
 		set xachiev4,1;
-		}
-	if ( $orphanagelevel >99){
-	mes "["+strcharinfo(0)+"]";
-	mes "I can see all my memories on the reflection. Almost as if I could be there again.";
-	next;
-	set .resetpricebase,1000-($orphanagelevel*10);
-	set .resetprice,BaseLevel*.resetpricebase;
-	mes "^6666CCYou have a feeling you can reset your stats and skills here.";
-	next;
-	if (unchainedjob !=0){
-	mes "^6666CCYou Unchained your limits. You can reset for free.^000000";
-	next;
-	atcommand "@allskill";
-	switch(select("Let me think about it.:Look deep inside.(Reset Stats)")) {
-	case 1:
-	close2;
-	end;
-	case 2:
-		resetstatus();
-		specialeffect2 EF_BLESSING;
-		close2;
-		end;
 	}
-	}
-	switch(select("Let me think about it.:Look deep inside.(Reset Stats) :Look near the surface.(Reset Skills)")) {
-	case 1:
-	close2;
-	end;
-	case 2:
-		if (zeny >= 1) {
-		resetstatus();
-		specialeffect2 EF_BLESSING;
-		close2;
-		end;
-		}
+	if ($orphanagelevel >99) {
 		mes "["+strcharinfo(0)+"]";
-		mes "I don't have enough zeny.";
-		close;
-	case 3:
-		if (zeny >= 1) {
-		resetskill();
-		specialeffect2 EF_BLESSING;
-		close2;
-		end;
+		mes "I can see all my memories on the reflection. Almost as if I could be there again.";
+		next;
+		set .resetpricebase,1000-($orphanagelevel*10);
+		set .resetprice,BaseLevel*.resetpricebase;
+		mes "^6666CCYou have a feeling you can reset your stats and skills here.";
+		next;
+		if (unchainedjob !=0) {
+			mes "^6666CCYou Unchained your limits. You can reset for free.^000000";
+			next;
+			atcommand "@allskill";
+			switch(select("Let me think about it.:Look deep inside.(Reset Stats)")) {
+				case 1:
+				close2;
+				end;
+				case 2:
+					resetstatus();
+					specialeffect2 EF_BLESSING;
+					close2;
+					end;
+			}
 		}
-		mes "["+strcharinfo(0)+"]";
-		mes "I don't have enough zeny.";
-		close;
-	}
+		switch(select("Let me think about it.:Look deep inside.(Reset Stats) :Look near the surface.(Reset Skills)")) {
+			case 1:
+			close2;
+			end;
+			case 2:
+				if (zeny >= 1) {
+					resetstatus();
+					specialeffect2 EF_BLESSING;
+					close2;
+					end;
+				}
+				mes "["+strcharinfo(0)+"]";
+				mes "I don't have enough zeny.";
+				close;
+			case 3:
+				if (zeny >= 1) {
+					resetskill();
+					specialeffect2 EF_BLESSING;
+					close2;
+					end;
+				}
+				mes "["+strcharinfo(0)+"]";
+				mes "I don't have enough zeny.";
+				close;
+		}
 	}
 	mes "["+strcharinfo(0)+"]";
 	mes "I can see all my memories on the reflection. Almost as if I could be there again.";
 	next;
 	set .resetpricebase,200-($orphanagelevel*2);
-	if (BaseLevel <=99){
-	set .resetprice,BaseLevel*.resetpricebase;
+	if (BaseLevel <50) {
+		set .resetprice, 0;
+	} else if (BaseLevel <=99) {
+		set .resetprice,BaseLevel*.resetpricebase;
+	} else if (BaseLevel >=100) {
+		set .resetprice,3*BaseLevel*.resetpricebase;
 	}
-	if (BaseLevel >=100){
-	set .resetprice,3*BaseLevel*.resetpricebase;
-	}
+	
 	mes "^6666CCYou have a feeling you can reset your stats and skills if you throw enough coins in the fountain...200 zeny per base level.^000000";
 	mes " ";
 	mes "^6666CCThe happiness from the Orphanage Level of "+ $orphanagelevel + " decreases this cost to "+ .resetpricebase +" zeny per base level.^000000";
 	next;
-	if (BaseLevel >=100){
-	mes "^6666CCHaving grown past Level 100, the weight of your experience is tripled to "+ 3*.resetpricebase +" per base level.^000000";
-	next;
+	if (BaseLevel < 50) {
+		mes "^6666CCBeing below level 50, you can reset for free.^000000";
+		next;
 	}
-	if (unchainedjob !=0){
+	if (BaseLevel >= 100) {
+		mes "^6666CCHaving grown past Level 100, the weight of your experience is tripled to "+ 3*.resetpricebase +" per base level.^000000";
+		next;
+	}
+	if (unchainedjob != 0) {
 	switch(select("Let me think about it.:Look deep inside.(Reset Stats)")) {
 	case 1:
 	close2;

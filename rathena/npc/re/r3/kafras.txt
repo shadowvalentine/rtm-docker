@@ -71,43 +71,43 @@ front_out,232,180,4	script	Kafra#front	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -186,43 +186,43 @@ dewata,198,184,4	script	Kafra#dew	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -415,43 +415,43 @@ prontera,156,182,4	script	Kafra#Prontera	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -629,43 +629,43 @@ payon,178,103,4	script	Kafra#Payon	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -806,43 +806,43 @@ morocc,161,98,4	script	Kafra#Morroc	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -983,43 +983,43 @@ geffen,120,67,4	script	Kafra#gef	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -1160,43 +1160,43 @@ alberta,113,60,4	script	Kafra#alb	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -1337,43 +1337,43 @@ izlude,128,146,4	script	Kafra#izl	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -1476,43 +1476,43 @@ aldebaran,145,113,4	script	Kafra#adb	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -1591,43 +1591,43 @@ xmas,149,132,4	script	Kafra#xmas	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -1749,43 +1749,43 @@ comodo,209,143,4	script	Kafra#cmd	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -1900,43 +1900,43 @@ yuno,169,80,4	script	Kafra#yuno	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break;
 	case 5:
@@ -2075,43 +2075,43 @@ amatsu,206,112,4	script	Kafra#ama	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -2203,43 +2203,43 @@ umbala,99,154,4	script	Kafra#umb	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -2312,43 +2312,43 @@ niflheim,196,188,4	script	Kafra#nif	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -2440,43 +2440,43 @@ ayothaya,216,184,4	script	Kafra#ayo	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -2568,43 +2568,43 @@ malaya,236,201,4	script	Kafra#mal	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -2706,43 +2706,43 @@ einbroch,233,216,4	script	Kafra#einb	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -2843,43 +2843,43 @@ einbech,189,139,4	script	Kafra#bech	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -2980,43 +2980,43 @@ lighthalzen,154,98,4	script	Kafra#lhz	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -3117,43 +3117,43 @@ hugel,101,147,4	script	Kafra#hug	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -3228,43 +3228,43 @@ rachel,139,144,4	script	Kafra#rch	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -3398,43 +3398,43 @@ mora,56,149,4	script	Kafra#mora	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -3526,43 +3526,43 @@ moscovia,227,196,4	script	Kafra#mosk	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:
@@ -3621,43 +3621,43 @@ nomadvill,152,149,4	script	Kafra#nomad	117,{
     specialeffect2 305;
     mes .@npc$;
     if(countitem(520) >= 1) {
-    set .elixir, countitem(520);
-    delitem 520,.elixir;
+			set .elixir, countitem(520);
+			delitem 520,.elixir;
     }
-    getitem 520,2;
-    if (getequipid(EQI_ACC_L) == 2935){
-    getitem 520,1;
-    }
-	 if (getequipid(EQI_GARMENT) == 2576){
     getitem 520,3;
+    if (getequipid(EQI_ACC_L) == 2935){
+    	getitem 520,1;
     }
-	 if (getequipid(EQI_HEAD_TOP) == 18533){
-	getitem 520,2;
+	 	if (getequipid(EQI_GARMENT) == 2576){
+    	getitem 520,3;
     }
-	 if (getequipid(EQI_ARMOR) == 2386){
-	getitem 520,6;
+	 	if (getequipid(EQI_HEAD_TOP) == 18533){
+			getitem 520,2;
     }
-	 if (bonuselixir ==1) {
-	getitem 520,1;
+		if (getequipid(EQI_ARMOR) == 2386){
+			getitem 520,6;
     }
-	mes "[Kafra]";
+	 	if (bonuselixir ==1) {
+			getitem 520,1;
+    }
+		mes "[Kafra]";
     mes "I have refilled your Kafra Elixir. Take Care!";
-	 if (getequipid(EQI_ACC_L) == 2935){
-	mes "I added +1 extra due to that cool Badge!";
-	 }
+	 	if (getequipid(EQI_ACC_L) == 2935){
+			mes "I added +1 extra due to that cool Badge!";
+	 	}
 	  if (getequipid(EQI_GARMENT) == 2576){
-	mes "I added +3 extra due to that large backpack you're carrying!";
-	 }
-	if (getequipid(EQI_HEAD_TOP) == 18533){
-	mes "I added +2 extra due to that sweet hat!";
-	}
-	if (getequipid(EQI_ARMOR) == 2386){
-	mes "I added +6 extra since those robes have so many pockets!";
-	}
-	if (bonuselixir == 1){
-	mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
-	 }
-	close2;
+			mes "I added +3 extra due to that large backpack you're carrying!";
+	 	}
+		if (getequipid(EQI_HEAD_TOP) == 18533){
+			mes "I added +2 extra due to that sweet hat!";
+		}
+		if (getequipid(EQI_ARMOR) == 2386){
+			mes "I added +6 extra since those robes have so many pockets!";
+		}
+		if (bonuselixir == 1){
+			mes "I added +1 extra for bringing back Allysia's Ring! Thanks for it!";
+	 	}
+		close2;
     cutin "",255;
     break; 
 	case 5:

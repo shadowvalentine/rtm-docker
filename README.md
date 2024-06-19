@@ -1,6 +1,6 @@
 # rtm-docker
 
-This is my attempt at dockerising the Project Return to Morroc files from Ornstein. Original files [here](https://drive.google.com/drive/folders/101h6AAgqiRcII_TP4C9EZ5sTp8Y-qjs7?usp=drive_link)
+This is my take on Ornstein's Return to Morroc server, built with Github Actions and hosted in AWS. Original files [here](https://drive.google.com/drive/folders/101h6AAgqiRcII_TP4C9EZ5sTp8Y-qjs7?usp=drive_link)
 
 rAthena Docker documentation [here](https://rathena.github.io/user-guides/installing/docker/)
 
@@ -9,12 +9,27 @@ rAthena repository [here](https://github.com/rathena/rathena)
 Credits: 
 - **mokona (`echomokona`)**: Thanks for all the help testing and troubleshooting these configs!
 
+Instructions:
+
+- Set the following secrets in your GitHub repository:
+  - aws_key_id: ${{ secrets.AWS_KEY_ID }}
+  - aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+  - aws_bucket: ${{ secrets.AWS_BUCKET }}
+- On merge to main, it will automatically build the server files, compress the output and required configs, and upload to S3 using the secrets provided.
+- My AWS configuration will not be made available here. However the output from the GitHub Runner is host-agnostic, and can be used to host the server anywhere.
+
+The below instructions are relevant for Docker or local Linux hosting. Both setups used Docker as the database instance. These have been archived in `docker-archive` and `local-archive` branches respectively.
+
+Archived instructions:
+
+-----
+
+Docker:
+
 Requirements:
 
 - Linux host
 - Docker for Linux
-
-My instructions:
 
 - Navigate to `rathena/tools/docker/asset`
 - **!! Important !!**
@@ -24,13 +39,15 @@ My instructions:
 
 Note: 
 
-- This is confirmed **not working** with WSL2. Please host it on Docker for Linux.
+- This is confirmed **not working** with WSL, or in a VM in Windows. Please host it on Docker for Linux, or build it for Windows using MSBuild.
 
 Optional:
 
 - To modify the database, you will require a MySQL client. I used `mysql-shell` 
 
-Archived instructions:
+-----
+
+Local:
 
 - Download the files from the "Original files" link above. 
 - Place folder 2 ("02 emu rathena") in the `rathena` folder.
