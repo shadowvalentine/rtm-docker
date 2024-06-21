@@ -17966,7 +17966,7 @@ Body:
     Hit: Single
     SplashArea: 5
     Requires:
-      SpCost: 1
+      SpCost: 0
   - Id: 1014
     Name: PR_REDEMPTIO
     Description: Final Angel
