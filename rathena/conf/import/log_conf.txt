@@ -1,4 +1,42 @@
+// LOGGING FILTERS
+// =============================================================
+// if any condition is true then the item will be logged
+// 0 = Don't log at all
+// 1 = Log any item
+// Advanced Filter Bits by item type: ||
+// 0002 - Healing items (0)
+// 0004 - Etc Items(3) + Arrows (10)
+// 0008 - Usable Items(2) + Lures,Scrolls(11) + Usable Cash Items(18)
+// 0016 - Weapon(4)
+// 0032 - Shields,Armor,Headgears,Accessories,etc(5)
+// 0064 - Cards(6)
+// 0128 - Pet Accessories(8) + Eggs(7) (well, monsters don't drop 'em but we'll use the same system for ALL logs)
+// 0256 - Log expensive items ( >= price_items_log)
+// 0512 - Log big amount of items ( >= amount_items_log)
+// 1024 - Log refined items (if their refine >= refine_items_log )
+// 2048 - Log rare items (if their drop chance <= rare_items_log )
+
+// Examples: (log filters)
+// log_filter: 1    = logs ANY items
+// log_filter: 2    = logs only HEALING items
+// log_filter: 4    = logs only Etc Items and Arrows
+// log_filter: 64   = logs only Cards
+// log_filter: 322  = logs only Healing items, Cards and those items which price is >= price_items_log
+// log_filter: 4080 = logs all items (including all rare, big amount) exept healing, etc, arrows and useble ones
 log_filter: 1
+
 // Log CHAT (Global, Whisper, Party, Guild, Main chat, Clan) (Note 3)
+// LOGGING FILTERS
+// =============================================================
+// 0 = Don't log at all
+// 1 - Log Global messages
+// 2 - Log Whisper messages
+// 4 - Log Party messages
+// 8 - Log Guild messages
+// 16 - Log Main chat messages
+// 32 - Log Clan messages
+// Example:
+// log_chat: 5 = logs both Whisper & Party messages
+// log_chat: 8 = logs only Guild messages
 // log_chat: 63 = logs everything
-log_chat: 11
+log_chat: 15
