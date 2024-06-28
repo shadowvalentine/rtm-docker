@@ -13183,6 +13183,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 40
+    Refineable: true
     Script: |
       bonus2 bHPDrainRate,1000,25;
       bonus bFlee2,5;
