@@ -66,8 +66,8 @@
 							cutin "",255;
 							break;
 						case 4:
+							cutin "",255;
 							close;
-            	cutin "",255;
 							break;
 					}
 					end;
