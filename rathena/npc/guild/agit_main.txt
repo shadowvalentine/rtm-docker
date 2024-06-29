@@ -364,9 +364,28 @@ OnRecvCastle:
 			mes "your Storage for you.";
 			mes "Thank you for using";
 			mes "the Kafra Service.";
-			close2;
-			cutin "",255;
-			openstorage;
+			next;
+			switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+				case 1:
+					close2;
+					openstorage;
+					cutin "",255;
+					break;
+				case 2:
+					close2;
+					openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+					cutin "",255;
+					break;
+				case 3:
+					close2;
+					openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+					cutin "",255;
+					break;
+				case 4:
+					cutin "",255;
+					close;
+					break;
+			}
 			end;
 		case 2:
 			mes "[Kafra Employee]";

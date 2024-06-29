@@ -1179,7 +1179,28 @@ mora,48,128,0	script	Drawer#mora_warehouse	111,{
 			close;
 		}
 		set Zeny, Zeny-100;
-		openstorage;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		close;
 	case 2:
 		mes "- You gave up using the warehouse. -";

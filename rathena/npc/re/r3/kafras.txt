@@ -20,7 +20,7 @@ front_out,232,180,4	script	Kafra#front	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -31,9 +31,28 @@ front_out,232,180,4	script	Kafra#front	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -135,7 +154,7 @@ dewata,198,184,4	script	Kafra#dew	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -146,9 +165,28 @@ dewata,198,184,4	script	Kafra#dew	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -254,7 +292,7 @@ prontera,156,182,4	script	Kafra#Prontera	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -265,9 +303,28 @@ prontera,156,182,4	script	Kafra#Prontera	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -537,9 +594,28 @@ payon,178,103,4	script	Kafra#Payon	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -693,7 +769,7 @@ morocc,161,98,4	script	Kafra#Morroc	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -704,9 +780,28 @@ morocc,161,98,4	script	Kafra#Morroc	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -870,7 +965,7 @@ geffen,120,67,4	script	Kafra#gef	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -881,9 +976,28 @@ geffen,120,67,4	script	Kafra#gef	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -1047,7 +1161,7 @@ alberta,113,60,4	script	Kafra#alb	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -1058,9 +1172,28 @@ alberta,113,60,4	script	Kafra#alb	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -1224,7 +1357,7 @@ izlude,128,146,4	script	Kafra#izl	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -1235,9 +1368,28 @@ izlude,128,146,4	script	Kafra#izl	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -1402,7 +1554,7 @@ aldebaran,145,113,4	script	Kafra#adb	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -1413,9 +1565,28 @@ aldebaran,145,113,4	script	Kafra#adb	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -1540,7 +1711,7 @@ xmas,149,132,4	script	Kafra#xmas	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -1551,9 +1722,28 @@ xmas,149,132,4	script	Kafra#xmas	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -1655,7 +1845,7 @@ comodo,209,143,4	script	Kafra#cmd	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -1666,9 +1856,28 @@ comodo,209,143,4	script	Kafra#cmd	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -1817,7 +2026,7 @@ yuno,169,80,4	script	Kafra#yuno	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -1828,9 +2037,28 @@ yuno,169,80,4	script	Kafra#yuno	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -2011,7 +2239,7 @@ amatsu,206,112,4	script	Kafra#ama	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -2022,9 +2250,28 @@ amatsu,206,112,4	script	Kafra#ama	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -2139,7 +2386,7 @@ umbala,99,154,4	script	Kafra#umb	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -2150,9 +2397,28 @@ umbala,99,154,4	script	Kafra#umb	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -2271,7 +2537,7 @@ niflheim,196,188,4	script	Kafra#nif	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -2282,9 +2548,28 @@ niflheim,196,188,4	script	Kafra#nif	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -2376,7 +2661,7 @@ ayothaya,216,184,4	script	Kafra#ayo	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -2387,9 +2672,28 @@ ayothaya,216,184,4	script	Kafra#ayo	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -2504,7 +2808,7 @@ malaya,236,201,4	script	Kafra#mal	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -2515,9 +2819,28 @@ malaya,236,201,4	script	Kafra#mal	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -2633,7 +2956,7 @@ einbroch,233,216,4	script	Kafra#einb	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -2644,9 +2967,28 @@ einbroch,233,216,4	script	Kafra#einb	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -2770,7 +3112,7 @@ einbech,189,139,4	script	Kafra#bech	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -2781,9 +3123,28 @@ einbech,189,139,4	script	Kafra#bech	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -2907,7 +3268,7 @@ lighthalzen,154,98,4	script	Kafra#lhz	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -2918,9 +3279,28 @@ lighthalzen,154,98,4	script	Kafra#lhz	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -3044,7 +3424,7 @@ hugel,101,147,4	script	Kafra#hug	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -3055,9 +3435,28 @@ hugel,101,147,4	script	Kafra#hug	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -3185,7 +3584,7 @@ rachel,139,144,4	script	Kafra#rch	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -3196,9 +3595,28 @@ rachel,139,144,4	script	Kafra#rch	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -3343,7 +3761,7 @@ mora,56,149,4	script	Kafra#mora	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -3354,9 +3772,28 @@ mora,56,149,4	script	Kafra#mora	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -3462,7 +3899,7 @@ moscovia,227,196,4	script	Kafra#mosk	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -3473,9 +3910,28 @@ moscovia,227,196,4	script	Kafra#mosk	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";
@@ -3594,7 +4050,7 @@ nomadvill,152,149,4	script	Kafra#nomad	117,{
 		mes "[Kafra]";
 		mes "Your Save Point has been set at your current location!";
 		next;
-		 getmapxy(.@map$,.@x,.@y,BL_PC);
+		getmapxy(.@map$,.@x,.@y,BL_PC);
 		savepoint .@map$,.@x,.@y;
 		mes "[Kafra]";
 		mes "Thanks for visiting!";
@@ -3605,9 +4061,28 @@ nomadvill,152,149,4	script	Kafra#nomad	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
-		close2;
-		openstorage;
-		cutin "",255;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		break;
 	case 3:
 		mes "[Kafra]";

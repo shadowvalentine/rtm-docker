@@ -108,8 +108,28 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				mes "[Cat Paw Agent]";
 				mes "Thank you.";
 				mes "Your storage will be opened shortly.";
-				close2;
-				openstorage;
+				next;
+				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+					case 1:
+						close2;
+						openstorage;
+						cutin "",255;
+						break;
+					case 2:
+						close2;
+						openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+						cutin "",255;
+						break;
+					case 3:
+						close2;
+						openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+						cutin "",255;
+						break;
+					case 4:
+						cutin "",255;
+						close;
+						break;
+				}
 				end;
 			}
 			else {
@@ -152,8 +172,28 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				mes "[Cat Paw Agent]";
 				mes "Thank you.";
 				mes "Your storage will be opened shortly.";
-				close2;
-				openstorage;
+				next;
+				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+					case 1:
+						close2;
+						openstorage;
+						cutin "",255;
+						break;
+					case 2:
+						close2;
+						openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+						cutin "",255;
+						break;
+					case 3:
+						close2;
+						openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+						cutin "",255;
+						break;
+					case 4:
+						cutin "",255;
+						close;
+						break;
+				}
 				end;
 			}
 			else {
@@ -274,8 +314,28 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				mes "[Cat Paw Agent]";
 				mes "Thank you.";
 				mes "Your storage will be opened shortly.";
-				close2;
-				openstorage;
+				next;
+				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+					case 1:
+						close2;
+						openstorage;
+						cutin "",255;
+						break;
+					case 2:
+						close2;
+						openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+						cutin "",255;
+						break;
+					case 3:
+						close2;
+						openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+						cutin "",255;
+						break;
+					case 4:
+						cutin "",255;
+						close;
+						break;
+				}
 				end;
 			}
 			else {

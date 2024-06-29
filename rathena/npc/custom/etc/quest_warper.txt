@@ -474,9 +474,28 @@ L_Storage:
 		set @kafcode_try,0;
 		set @code_,0;
 	}
-	mes "Close this window and I will open your storage.";
-	close2;
-	openstorage;
+	mes "Select a storage to open.";
+	switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+		case 1:
+			close2;
+			openstorage;
+			cutin "",255;
+			break;
+		case 2:
+			close2;
+			openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+			cutin "",255;
+			break;
+		case 3:
+			close2;
+			openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+			cutin "",255;
+			break;
+		case 4:
+			cutin "",255;
+			close;
+			break;
+	}
 	end;
 
 L_StorageJBlow:

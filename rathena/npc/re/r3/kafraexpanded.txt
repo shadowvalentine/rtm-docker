@@ -33,7 +33,28 @@
 		close2;
 		if (Zeny < 200) break;
 		set Zeny, Zeny-200;
-		openstorage;
+		next;
+		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+			case 1:
+				close2;
+				openstorage;
+				cutin "",255;
+				break;
+			case 2:
+				close2;
+				openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 3:
+				close2;
+				openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+				cutin "",255;
+				break;
+			case 4:
+				cutin "",255;
+				close;
+				break;
+		}
 		cutin "",255;
 		break;
 	case 2:
