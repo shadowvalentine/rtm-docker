@@ -23971,8 +23971,8 @@ Body:
       Skill:
         Plagiarism: true
     Element: Weapon
-    AfterCastActDelay: 1600
-    Cooldown: 600
+    AfterCastActDelay: 1000
+    Cooldown: 1000
     Requires:
       SpCost:
         - Level: 1
