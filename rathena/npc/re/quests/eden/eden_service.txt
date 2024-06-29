@@ -44,12 +44,30 @@
 				if (Zeny > 499) {
 					if(!callfunc("F_CanOpenStorage")){
 						mes "The cabinet is not working for me.";
-						mes "Maybe I am not yet qualified to use Cabinet.";
+						mes "Maybe I am not yet qualified to use the Cabinet.";
 						close;
 					}
 					set Zeny, Zeny - 500;
-					close2;
-					openstorage;
+					switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+						case 1:
+							close2;
+							openstorage;
+							cutin "",255;
+							break;
+						case 2:
+							close2;
+							openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+							cutin "",255;
+							break;
+						case 3:
+							close2;
+							openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+							cutin "",255;
+							break;
+						case 4:
+							close;
+							break;
+					}
 					end;
 				}
 				mes "I don't have enough zeny.";

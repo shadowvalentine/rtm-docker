@@ -853,8 +853,32 @@ OnInit:
 				mes "I'm so sorry, but you must";
 				mes "have at least Novice Skill";
 				mes "Lv.6 to use the Storage.";
+			} else {
+				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
+					case 1:
+						close2;
+						openstorage;
+						cutin "",255;
+						break;
+					case 2:
+						close2;
+						openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+						cutin "",255;
+						break;
+					case 3:
+						close2;
+						openstorage2 2,STOR_MODE_GET|STOR_MODE_PUT;
+						cutin "",255;
+						break;
+					case 4:
+						mes "[Kafra Employee]";
+						mes "Let me know if you change your mind.";
+						mes "Thanks for your patronage.";
+						close;
+						break;
+				}
 			}
-			else openstorage;
+			
 			break;
 		case 2:
 			mes "[Kafra Employee]";
