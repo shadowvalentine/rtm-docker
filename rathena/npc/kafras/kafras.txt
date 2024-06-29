@@ -77,6 +77,7 @@ aldeba_in,96,181,4	script	Kafra Service	113,{
 		mes "any of the Kafra Services.";
 		mes "Thank you for your patronage.";
 		callfunc("F_CheckKafCode");    //check your storage password, if set
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -94,6 +95,7 @@ aldeba_in,96,181,4	script	Kafra Service	113,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}

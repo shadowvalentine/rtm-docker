@@ -33,6 +33,7 @@
 		close2;
 		if (Zeny < 200) break;
 		set Zeny, Zeny-200;
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -50,6 +51,7 @@
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}

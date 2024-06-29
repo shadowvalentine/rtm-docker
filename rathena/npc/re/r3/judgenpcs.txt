@@ -24,6 +24,7 @@ prt_cas,261,320,4	script	Quartermaster#judge	10182,{
 		callshop "judgeshop",0;
 		end;
 		case 2:
+			next;
 			switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 				case 1:
 					close2;
@@ -41,6 +42,7 @@ prt_cas,261,320,4	script	Quartermaster#judge	10182,{
 					cutin "",255;
 					break;
 				case 4:
+					cutin "",255;
 					close;
 					break;
 			}

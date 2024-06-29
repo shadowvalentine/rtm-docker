@@ -364,6 +364,7 @@ OnRecvCastle:
 			mes "your Storage for you.";
 			mes "Thank you for using";
 			mes "the Kafra Service.";
+			next;
 			switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 				case 1:
 					close2;
@@ -381,6 +382,7 @@ OnRecvCastle:
 					cutin "",255;
 					break;
 				case 4:
+					cutin "",255;
 					close;
 					break;
 			}

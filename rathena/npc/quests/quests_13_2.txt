@@ -108,6 +108,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				mes "[Cat Paw Agent]";
 				mes "Thank you.";
 				mes "Your storage will be opened shortly.";
+				next;
 				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 					case 1:
 						close2;
@@ -125,6 +126,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 						cutin "",255;
 						break;
 					case 4:
+						cutin "",255;
 						close;
 						break;
 				}
@@ -170,6 +172,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				mes "[Cat Paw Agent]";
 				mes "Thank you.";
 				mes "Your storage will be opened shortly.";
+				next;
 				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 					case 1:
 						close2;
@@ -187,6 +190,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 						cutin "",255;
 						break;
 					case 4:
+						cutin "",255;
 						close;
 						break;
 				}
@@ -310,6 +314,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				mes "[Cat Paw Agent]";
 				mes "Thank you.";
 				mes "Your storage will be opened shortly.";
+				next;
 				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 					case 1:
 						close2;
@@ -327,6 +332,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 						cutin "",255;
 						break;
 					case 4:
+						cutin "",255;
 						close;
 						break;
 				}

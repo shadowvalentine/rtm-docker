@@ -275,6 +275,7 @@ function	script	F_KafStor	{
 		}
 	}
 	callfunc("F_CheckKafCode");	//check your storage password, if set
+	next;
 	switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 		case 1:
 			close2;
@@ -292,6 +293,7 @@ function	script	F_KafStor	{
 			cutin "",255;
 			break;
 		case 4:
+			cutin "",255;
 			close;
 			break;
 	}

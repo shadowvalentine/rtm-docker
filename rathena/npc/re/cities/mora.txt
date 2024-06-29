@@ -1179,6 +1179,7 @@ mora,48,128,0	script	Drawer#mora_warehouse	111,{
 			close;
 		}
 		set Zeny, Zeny-100;
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -1196,6 +1197,7 @@ mora,48,128,0	script	Drawer#mora_warehouse	111,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}

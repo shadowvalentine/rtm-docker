@@ -854,6 +854,7 @@ OnInit:
 				mes "have at least Novice Skill";
 				mes "Lv.6 to use the Storage.";
 			} else {
+				next;
 				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 					case 1:
 						close2;
@@ -871,9 +872,7 @@ OnInit:
 						cutin "",255;
 						break;
 					case 4:
-						mes "[Kafra Employee]";
-						mes "Let me know if you change your mind.";
-						mes "Thanks for your patronage.";
+						cutin "",255;
 						close;
 						break;
 				}

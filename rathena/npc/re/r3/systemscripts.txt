@@ -255,6 +255,7 @@ einbroch,233,216,4	script	Kafra#einb	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -272,6 +273,7 @@ einbroch,233,216,4	script	Kafra#einb	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}

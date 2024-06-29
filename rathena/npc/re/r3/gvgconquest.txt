@@ -158,6 +158,7 @@ gvg_prep,162,24,5	script	Storage#BGFStorage	416,{
             cutin "",255;
             break;
         case 4:
+            cutin "",255;
             close;
             break;
     }

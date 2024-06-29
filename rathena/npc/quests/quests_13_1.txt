@@ -7668,6 +7668,7 @@ function Catwarp;
 				mes "Thank you.";
 				mes "Your storage will";
 				mes "be opened shortly.";
+				next;
 				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 					case 1:
 						close2;
@@ -7685,6 +7686,7 @@ function Catwarp;
 						cutin "",255;
 						break;
 					case 4:
+						cutin "",255;
 						close;
 						break;
 				}
@@ -7733,6 +7735,7 @@ function Catwarp;
 				mes "Thank you.";
 				mes "Your storage will";
 				mes "be opened shortly.";
+				next;
 				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 					case 1:
 						close2;
@@ -7750,6 +7753,7 @@ function Catwarp;
 						cutin "",255;
 						break;
 					case 4:
+						cutin "",255;
 						close;
 						break;
 				}
@@ -7873,6 +7877,7 @@ function Catwarp;
 				mes "Thank you.";
 				mes "Your storage will";
 				mes "be opened shortly.";
+				next;
 				switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 					case 1:
 						close2;
@@ -7890,6 +7895,7 @@ function Catwarp;
 						cutin "",255;
 						break;
 					case 4:
+						cutin "",255;
 						close;
 						break;
 				}

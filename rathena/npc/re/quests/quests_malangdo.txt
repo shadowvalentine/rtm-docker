@@ -370,6 +370,7 @@ malangdo,184,139,4	script	Storekeeper#mal	560,{
 			cutin "",255;
 			break;
 		case 4:
+			cutin "",255;
 			close;
 			break;
 	}

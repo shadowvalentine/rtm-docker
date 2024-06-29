@@ -31,6 +31,7 @@ front_out,232,180,4	script	Kafra#front	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -48,6 +49,7 @@ front_out,232,180,4	script	Kafra#front	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -163,6 +165,7 @@ dewata,198,184,4	script	Kafra#dew	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -180,6 +183,7 @@ dewata,198,184,4	script	Kafra#dew	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -299,6 +303,7 @@ prontera,156,182,4	script	Kafra#Prontera	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -316,6 +321,7 @@ prontera,156,182,4	script	Kafra#Prontera	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -588,6 +594,7 @@ payon,178,103,4	script	Kafra#Payon	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -605,6 +612,7 @@ payon,178,103,4	script	Kafra#Payon	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -772,6 +780,7 @@ morocc,161,98,4	script	Kafra#Morroc	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -789,6 +798,7 @@ morocc,161,98,4	script	Kafra#Morroc	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -966,6 +976,7 @@ geffen,120,67,4	script	Kafra#gef	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -983,6 +994,7 @@ geffen,120,67,4	script	Kafra#gef	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -1160,6 +1172,7 @@ alberta,113,60,4	script	Kafra#alb	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -1177,6 +1190,7 @@ alberta,113,60,4	script	Kafra#alb	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -1354,6 +1368,7 @@ izlude,128,146,4	script	Kafra#izl	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -1371,6 +1386,7 @@ izlude,128,146,4	script	Kafra#izl	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -1549,6 +1565,7 @@ aldebaran,145,113,4	script	Kafra#adb	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -1566,6 +1583,7 @@ aldebaran,145,113,4	script	Kafra#adb	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -1704,6 +1722,7 @@ xmas,149,132,4	script	Kafra#xmas	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -1721,6 +1740,7 @@ xmas,149,132,4	script	Kafra#xmas	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -1836,6 +1856,7 @@ comodo,209,143,4	script	Kafra#cmd	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -1853,6 +1874,7 @@ comodo,209,143,4	script	Kafra#cmd	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -2015,6 +2037,7 @@ yuno,169,80,4	script	Kafra#yuno	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -2032,6 +2055,7 @@ yuno,169,80,4	script	Kafra#yuno	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -2226,6 +2250,7 @@ amatsu,206,112,4	script	Kafra#ama	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -2243,6 +2268,7 @@ amatsu,206,112,4	script	Kafra#ama	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -2371,6 +2397,7 @@ umbala,99,154,4	script	Kafra#umb	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -2388,6 +2415,7 @@ umbala,99,154,4	script	Kafra#umb	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -2520,6 +2548,7 @@ niflheim,196,188,4	script	Kafra#nif	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -2537,6 +2566,7 @@ niflheim,196,188,4	script	Kafra#nif	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -2642,6 +2672,7 @@ ayothaya,216,184,4	script	Kafra#ayo	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -2659,6 +2690,7 @@ ayothaya,216,184,4	script	Kafra#ayo	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -2787,6 +2819,7 @@ malaya,236,201,4	script	Kafra#mal	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -2804,6 +2837,7 @@ malaya,236,201,4	script	Kafra#mal	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -2933,6 +2967,7 @@ einbroch,233,216,4	script	Kafra#einb	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -2950,6 +2985,7 @@ einbroch,233,216,4	script	Kafra#einb	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -3087,6 +3123,7 @@ einbech,189,139,4	script	Kafra#bech	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -3104,6 +3141,7 @@ einbech,189,139,4	script	Kafra#bech	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -3241,6 +3279,7 @@ lighthalzen,154,98,4	script	Kafra#lhz	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -3258,6 +3297,7 @@ lighthalzen,154,98,4	script	Kafra#lhz	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -3395,6 +3435,7 @@ hugel,101,147,4	script	Kafra#hug	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -3412,6 +3453,7 @@ hugel,101,147,4	script	Kafra#hug	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -3553,6 +3595,7 @@ rachel,139,144,4	script	Kafra#rch	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -3570,6 +3613,7 @@ rachel,139,144,4	script	Kafra#rch	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -3728,6 +3772,7 @@ mora,56,149,4	script	Kafra#mora	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -3745,6 +3790,7 @@ mora,56,149,4	script	Kafra#mora	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -3864,6 +3910,7 @@ moscovia,227,196,4	script	Kafra#mosk	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -3881,6 +3928,7 @@ moscovia,227,196,4	script	Kafra#mosk	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
@@ -4013,6 +4061,7 @@ nomadvill,152,149,4	script	Kafra#nomad	117,{
 		mes "[Kafra]";
 		mes "I'll access your Storage for you.";
 		mes "Thank you for hiring our services!";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -4030,6 +4079,7 @@ nomadvill,152,149,4	script	Kafra#nomad	117,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}

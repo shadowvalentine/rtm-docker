@@ -433,6 +433,7 @@ dic_in01,254,119,0	script	Item Storage#01	844,{
 		close; 
 	}
 	set Zeny, Zeny-500;
+	next;
 	switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 		case 1:
 			close2;
@@ -450,6 +451,7 @@ dic_in01,254,119,0	script	Item Storage#01	844,{
 			cutin "",255;
 			break;
 		case 4:
+			cutin "",255;
 			close;
 			break;
 	}

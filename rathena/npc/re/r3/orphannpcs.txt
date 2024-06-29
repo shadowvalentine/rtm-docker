@@ -966,6 +966,7 @@ va_orpha,31,261,3	script	Heimdall Alt-Eisen#orphanage	813,{
 		case 3:
 		mes "[Heimdall Alt-Eisen]";
 		mes "Sure thing. Try not to spend all your ores ok?";
+		next;
 		switch(select("Storage 1:Storage 2:Storage 3:Cancel")) {
 			case 1:
 				close2;
@@ -983,6 +984,7 @@ va_orpha,31,261,3	script	Heimdall Alt-Eisen#orphanage	813,{
 				cutin "",255;
 				break;
 			case 4:
+				cutin "",255;
 				close;
 				break;
 		}
