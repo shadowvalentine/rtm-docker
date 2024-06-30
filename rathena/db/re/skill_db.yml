@@ -6913,9 +6913,6 @@ Body:
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack
-    CopyFlags:
-      Skill:
-        Plagiarism: true
     Range:
       - Level: 1
         Size: 3
@@ -20307,13 +20304,11 @@ Body:
     CopyFlags:
       Skill:
         Plagiarism: true
+        Reproduce: true
     Hit: Single
     HitCount: 1
     Element: Weapon
     SplashArea: 3
-    CopyFlags:
-      Skill:
-        Reproduce: true
     AfterCastActDelay: 2000
     Requires:
       SpCost: 30
@@ -20434,14 +20429,12 @@ Body:
     CopyFlags:
       Skill:
         Plagiarism: true
+        Reproduce: true
     Range: 11
     Hit: Multi_Hit
     HitCount: -3
     Element: Dark
     SplashArea: 2
-    CopyFlags:
-      Skill:
-        Reproduce: true
     CastCancel: true
     CastTime: 100
     AfterCastActDelay: 500
@@ -23255,9 +23248,6 @@ Body:
     Hit: Multi_Hit
     HitCount: -3
     Element: Weapon
-    CopyFlags:
-      Skill:
-        plagiarism: true
     CastCancel: true
     AfterCastActDelay: 500
     Cooldown: 2000
@@ -23875,6 +23865,7 @@ Body:
     CopyFlags:
       Skill:
         Plagiarism: true
+        Reproduce: true
     HitCount: 1
     Element: Weapon
     Knockback:
@@ -23888,9 +23879,6 @@ Body:
         Amount: 4
       - Level: 5
         Amount: 5
-    CopyFlags:
-      Skill:
-        Reproduce: true
     CastTime: 1500
     Duration1: 1500
     Cooldown: 5000
@@ -24465,9 +24453,6 @@ Body:
     HitCount: 2
     Element: Weapon
     SplashArea: 3
-    CopyFlags:
-      Skill:
-        Plagiarism: true
     CastCancel: true
     CastTime: 1000
     AfterCastActDelay: 200
@@ -24519,9 +24504,6 @@ Body:
       Skill:
         Plagiarism: true
     Element: Weapon
-    CopyFlags:
-      Skill:
-        Plagiarism: true
     CastCancel: true
     AfterCastActDelay: 200
     Cooldown: 1500
@@ -27268,6 +27250,7 @@ Body:
     CopyFlags:
       Skill:
         Plagiarism: true
+        Reproduce: true
     Hit: Single
     HitCount: -1
     Element: Poison
@@ -27292,9 +27275,6 @@ Body:
         Area: 5
       - Level: 10
         Area: 5
-    CopyFlags:
-      Skill:
-        Reproduce: true
     CastCancel: true
     CastTime:
       - Level: 1
@@ -28701,7 +28681,6 @@ Body:
     Range: 5
     Hit: Multi_Hit
     HitCount: 2
-    Element: Weapon
     SplashArea: 2
     ActiveInstance:
       - Level: 1
@@ -30651,7 +30630,6 @@ Body:
           Amount: 80
         - Level: 10
           Amount: 85
-      State: Sunstance
   - Id: 2593
     Name: SJ_PROMINENCEKICK
     Description: Dragon Thrust
@@ -32059,9 +32037,6 @@ Body:
     Description: Eruption
     MaxLevel: 10
     Type: Magic
-    CopyFlags:
-      Skill:
-        Plagiarism: true
     Flags:
       IsAutoShadowSpell: true
     TargetType: Attack
@@ -33197,9 +33172,6 @@ Body:
       Splash: true
     Range: 3
     Hit: Single
-    CopyFlags:
-      Skill:
-        Plagiarism: true
     HitCount: 1
     Element: Weapon
     SplashArea: 3
