@@ -34084,7 +34084,7 @@ Body:
       - Item: Clattering_Skull
         Rate: 10000
       - Item: JobRune_Coffer
-        Rate: 50
+        Rate: 100
       - Item: Zombie_Slaughter_Card
         Rate: 100
         StealProtected: true
@@ -34129,7 +34129,7 @@ Body:
       - Item: Clattering_Skull
         Rate: 10000
       - Item: JobRune_Coffer
-        Rate: 50
+        Rate: 100
       - Item: Ragged_Zombie_Card
         Rate: 100
         StealProtected: true
@@ -34177,7 +34177,7 @@ Body:
       - Item: Clattering_Skull
         Rate: 10000
       - Item: JobRune_Coffer
-        Rate: 50
+        Rate: 100
       - Item: Hell_Poodle_Card
         Rate: 100
         StealProtected: true
@@ -34222,7 +34222,7 @@ Body:
       - Item: Clattering_Skull
         Rate: 10000
       - Item: JobRune_Coffer
-        Rate: 50
+        Rate: 100
       - Item: Banshee_Card
         Rate: 100
         StealProtected: true
@@ -34303,7 +34303,7 @@ Body:
       - Item: Clattering_Skull
         Rate: 10000
       - Item: JobRune_Coffer
-        Rate: 50
+        Rate: 100
       - Item: Flame_Skull_Card
         Rate: 100
         StealProtected: true
