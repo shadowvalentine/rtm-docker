@@ -29,8 +29,6 @@
 	next;
 	switch(select("Use Storage - 200z:Refill Elixir:Quick Shop:Nothing")) {
 	case 1:
-		cutin "",255;
-		close2;
 		if (Zeny < 200) break;
 		set Zeny, Zeny-200;
 		next;
