@@ -26901,11 +26901,11 @@ Body:
       skill "CR_AUTOGUARD",10;
       bonus bMaxHPrate,5;
       bonus bMdef,7;
+      bonus bNoWalkDelay;
       .@r = getrefine();
       bonus bNoMagicDamage,.@r;
       bonus bNoWeaponDamage,.@r;
       bonus bNoMiscDamage,.@r;
-      bonus bNoWalkDelay;
     UnEquipScript: |
       sc_end SC_AUTOGUARD;
   - Id: 2183
