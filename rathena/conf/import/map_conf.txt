@@ -6,7 +6,7 @@ passwd: hmDJTd3*W4Mg2UJNm@s8
 // The map server connects to the character server using this IP address.
 // NOTE: This is useful when you are running behind a firewall or are on
 // a machine with multiple interfaces.
-char_ip: rtm-nlb-b4c24c5d69b43d73.elb.ap-southeast-2.amazonaws.com
+char_ip: localhost
 
 // The map server listens on the interface with this IP address.
 // NOTE: This allows you to run multiple servers on multiple interfaces
