@@ -52,27 +52,27 @@ Body:
       - Slot: 1
         Options:
           - Option: VAR_STRAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_AGIAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_VITAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_INTAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_DEXAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_LUKAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
       - Slot: 2
@@ -105,27 +105,27 @@ Body:
       - Slot: 1
         Options:
           - Option: VAR_STRAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_AGIAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_VITAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_INTAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_DEXAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_LUKAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
       - Slot: 2
@@ -139,7 +139,7 @@ Body:
             MaxValue: 3
             Chance: 4000
           - Option: VAR_PLUSAVOIDSUCCESSVALUE
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 4000
       - Slot: 3
@@ -162,27 +162,27 @@ Body:
       - Slot: 1
         Options:
           - Option: VAR_STRAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_AGIAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_VITAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_INTAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_DEXAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_LUKAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
       - Slot: 2
@@ -219,27 +219,27 @@ Body:
       - Slot: 1
         Options:
           - Option: VAR_STRAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_AGIAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_VITAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_INTAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_DEXAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_LUKAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
       - Slot: 2
@@ -372,7 +372,7 @@ Body:
             MaxValue: 10
             Chance: 3000
           - Option: VAR_PLUSASPD
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 3000
           - Option: VAR_HITSUCCESSVALUE
@@ -469,7 +469,7 @@ Body:
             MaxValue: 10
             Chance: 3000
           - Option: VAR_PLUSASPD
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 3000
           - Option: VAR_HITSUCCESSVALUE
@@ -570,7 +570,7 @@ Body:
             MaxValue: 10
             Chance: 3000
           - Option: VAR_PLUSASPD
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 3000
           - Option: VAR_HITSUCCESSVALUE
@@ -667,7 +667,7 @@ Body:
             MaxValue: 10
             Chance: 3000
           - Option: VAR_PLUSASPD
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 3000
           - Option: VAR_HITSUCCESSVALUE
@@ -764,7 +764,7 @@ Body:
             MaxValue: 10
             Chance: 3000
           - Option: VAR_PLUSASPD
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 3000
           - Option: VAR_HITSUCCESSVALUE
@@ -859,7 +859,7 @@ Body:
             MaxValue: 10
             Chance: 3000
           - Option: VAR_PLUSASPD
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 3000
           - Option: VAR_HITSUCCESSVALUE
@@ -885,7 +885,7 @@ Body:
             MaxValue: 5
             Chance: 2000
           - Option: ADDSKILLMDAMAGE_UNDEAD
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 1000
       - Slot: 4
@@ -1756,7 +1756,7 @@ Body:
       - Slot: 3
         Options:
           - Option: VAR_PLUSASPD
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 3000
           - Option: DEC_SPELL_DELAY_TIME
@@ -1773,27 +1773,27 @@ Body:
       - Slot: 1
         Options:
           - Option: VAR_STRAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_AGIAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_VITAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_INTAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_DEXAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
           - Option: VAR_LUKAMOUNT
-            MinValue: 1
+            MinValue: 2
             MaxValue: 2
             Chance: 2000
       - Slot: 2
