@@ -31395,7 +31395,7 @@ Body:
       Container: true
       DropEffect: PURPLE_PILLAR
     Script: |
-      callfunc "KafraBox";
+      callfunc "KafraBox2";
   - Id: 14715
     AegisName: Kafra_Coffer2
     Name: Kafra Coffer2
