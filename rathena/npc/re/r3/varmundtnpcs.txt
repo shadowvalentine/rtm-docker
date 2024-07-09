@@ -102,8 +102,8 @@ va_in01,220,99,3	script	Vidar Sage#manualconvert	4_ep17_tamarin,{
 		if(countitem(24100) < 1) goto L_noitems2;
 		if(countitem(24105) < 1) goto L_noitems2;
 		if(countitem(7360) < 1000) goto L_noitems2;
-		if(countitem(7361) < 100) goto L_noitems2;
-		if(countitem(6906) < 10) goto L_noitems2;
+		if(countitem(7361) < 70) goto L_noitems2;
+		if(countitem(6906) < 7) goto L_noitems2;
 		emotion ET_SURPRISE;
 		mes .@npc$;
 		mes "Amazing! You actually have everything needed!";
@@ -122,8 +122,8 @@ va_in01,220,99,3	script	Vidar Sage#manualconvert	4_ep17_tamarin,{
 		delitem 24100,1;
 		delitem 24105,1;
 		delitem 7360,1000;
-		delitem 7361,100;
-		delitem 6906,10;
+		delitem 7361,70;
+		delitem 6906,7;
 		getitem 24107,1;
 		close2;
 		cutin "",255;
@@ -140,8 +140,8 @@ va_in01,220,99,3	script	Vidar Sage#manualconvert	4_ep17_tamarin,{
 		mes "^FF00001^000000 Medic Manual Z";//24100
 		mes "^FF00001^000000 Life Manual X";//24105
 		mes "^FF00001000^000000 Distortion Shards";//7360
-		mes "^FF0000100^000000 Distortion Essences";//7360
-		mes "^FF000010^000000 Jewel Oridecons";//6906
+		mes "^FF000070^000000 Distortion Essences";//7360
+		mes "^FF00007^000000 Jewel Oridecons";//6906
 		next;
 		mes .@npc$;
 		mes "I know that's a very extensive list, but this one is a true mastercraft you know?";
@@ -170,8 +170,8 @@ va_in01,207,100,6	script	Thor Sage#manualconvert	4_ep16_tamarin,{
 		if(countitem(24136) < 1) goto L_noitems2;
 		if(countitem(24142) < 1) goto L_noitems2;
 		if(countitem(7360) < 1000) goto L_noitems2;
-		if(countitem(7361) < 100) goto L_noitems2;
-		if(countitem(6290) < 10) goto L_noitems2;
+		if(countitem(7361) < 70) goto L_noitems2;
+		if(countitem(6290) < 7) goto L_noitems2;
 		emotion ET_SURPRISE;
 		mes .@npc$;
 		mes "Amazing! You actually have everything needed!";
@@ -190,8 +190,8 @@ va_in01,207,100,6	script	Thor Sage#manualconvert	4_ep16_tamarin,{
 		delitem 24136,1;
 		delitem 24142,1;
 		delitem 7360,1000;
-		delitem 7361,100;
-		delitem 6290,10;
+		delitem 7361,70;
+		delitem 6290,7;
 		getitem 24148,1;
 		close2;
 		cutin "",255;
@@ -208,8 +208,8 @@ va_in01,207,100,6	script	Thor Sage#manualconvert	4_ep16_tamarin,{
 		mes "^FF00001^000000 Portal Manual Z";//24136
 		mes "^FF00001^000000 Union Manual";//24142
 		mes "^FF00001000^000000 Distortion Shards";//7360
-		mes "^FF0000100^000000 Distortion Essences";//7360
-		mes "^FF000010^000000 Jewel Elunium";//6290
+		mes "^FF000070^000000 Distortion Essences";//7360
+		mes "^FF00007^000000 Jewel Elunium";//6290
 		next;
 		mes .@npc$;
 		mes "I know that's a very extensive list, but this one is a true mastercraft you know?";
@@ -239,8 +239,8 @@ va_in01,203,119,4	script	Vali Sage#manualconvert	4_m_tamarin,{
 		if(countitem(24021) < 1) goto L_noitems2;
 		if(countitem(24168) < 1) goto L_noitems2;
 		if(countitem(7360) < 1000) goto L_noitems2;
-		if(countitem(7361) < 100) goto L_noitems2;
-		if(countitem(6226) < 5) goto L_noitems2;
+		if(countitem(7361) < 70) goto L_noitems2;
+		if(countitem(6226) < 3) goto L_noitems2;
 		emotion ET_SURPRISE;
 		mes .@npc$;
 		mes "Amazing! You actually have everything needed!";
@@ -260,8 +260,8 @@ va_in01,203,119,4	script	Vali Sage#manualconvert	4_m_tamarin,{
 		delitem 24021,1;
 		delitem 24168,1;
 		delitem 7360,1000;
-		delitem 7361,100;
-		delitem 6226,5;
+		delitem 7361,70;
+		delitem 6226,3;
 		getitem 24225,1;
 		close2;
 		cutin "",255;
@@ -279,8 +279,8 @@ va_in01,203,119,4	script	Vali Sage#manualconvert	4_m_tamarin,{
 		mes "^FF00001^000000 Agility Manual X";//24021
 		mes "^FF00001^000000 Hammer Manual X";//24168
 		mes "^FF00001000^000000 Distortion Shards";//7360
-		mes "^FF0000100^000000 Distortion Essences";//7360
-		mes "^FF00005^000000 Jewel Bradium";//6226
+		mes "^FF000070^000000 Distortion Essences";//7360
+		mes "^FF00003^000000 Jewel Bradium";//6226
 		next;
 		mes .@npc$;
 		mes "I know that's a very extensive list, but this one is a true mastercraft you know?";
