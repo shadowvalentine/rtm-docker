@@ -140,7 +140,7 @@ va_in01,220,99,3	script	Vidar Sage#manualconvert	4_ep17_tamarin,{
 		mes "^FF00001^000000 Medic Manual Z";//24100
 		mes "^FF00001^000000 Life Manual X";//24105
 		mes "^FF00001000^000000 Distortion Shards";//7360
-		mes "^FF000070^000000 Distortion Essences";//7360
+		mes "^FF000070^000000 Distortion Essences";//7361
 		mes "^FF00007^000000 Jewel Oridecons";//6906
 		next;
 		mes .@npc$;
@@ -208,7 +208,7 @@ va_in01,207,100,6	script	Thor Sage#manualconvert	4_ep16_tamarin,{
 		mes "^FF00001^000000 Portal Manual Z";//24136
 		mes "^FF00001^000000 Union Manual";//24142
 		mes "^FF00001000^000000 Distortion Shards";//7360
-		mes "^FF000070^000000 Distortion Essences";//7360
+		mes "^FF000070^000000 Distortion Essences";//7361
 		mes "^FF00007^000000 Jewel Elunium";//6290
 		next;
 		mes .@npc$;
@@ -279,7 +279,7 @@ va_in01,203,119,4	script	Vali Sage#manualconvert	4_m_tamarin,{
 		mes "^FF00001^000000 Agility Manual X";//24021
 		mes "^FF00001^000000 Hammer Manual X";//24168
 		mes "^FF00001000^000000 Distortion Shards";//7360
-		mes "^FF000070^000000 Distortion Essences";//7360
+		mes "^FF000070^000000 Distortion Essences";//7361
 		mes "^FF00003^000000 Jewel Bradium";//6226
 		next;
 		mes .@npc$;

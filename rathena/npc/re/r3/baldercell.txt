@@ -34,7 +34,7 @@ balder_cell,107,101,3	script	Balder#Cell	683,{
 				mes "Leave it to me.";
 				close2;
 				if (irisunlock == 0){
-				set irisunlock,1;
+					set irisunlock,1;
 				}
 				cutin "",255;
 				end;
