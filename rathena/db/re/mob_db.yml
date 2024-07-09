@@ -8945,7 +8945,7 @@ Body:
       - Item: Distortion_Shard
         Rate: 10000
       - Item: Old_Hilt
-        Rate: 5
+        Rate: 50
       - Item: Bride_VeilMVP
         Rate: 20
   - Id: 1204
@@ -8996,7 +8996,7 @@ Body:
       - Item: Distortion_Shard
         Rate: 10000
       - Item: Old_Hilt
-        Rate: 5
+        Rate: 50
       - Item: Bride_VeilMVP
         Rate: 20
   - Id: 1205
@@ -9045,7 +9045,7 @@ Body:
       - Item: 2nd_Shadow_Coffer
         Rate: 300
       - Item: Old_Hilt
-        Rate: 5
+        Rate: 50
       - Item: Bride_VeilMVP
         Rate: 20
   - Id: 1206
@@ -10600,7 +10600,7 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Old_Hilt
-        Rate: 20
+        Rate: 50
       - Item: C_Good_Wedding_Veil
         Rate: 25
   - Id: 1245
@@ -71956,7 +71956,7 @@ Body:
     AegisName: MM_EVIL_SHADOW1
     Name: Rank E Shadow
     Level: 1
-    Hp: 10
+    Hp: 8
     Attack: 1
     Attack2: 1
     Defense: 100
@@ -71987,7 +71987,7 @@ Body:
     AegisName: MM_EVIL_SHADOW2
     Name: Rank D Shadow
     Level: 1
-    Hp: 15
+    Hp: 12
     Attack: 1
     Attack2: 1
     Defense: 100
@@ -72020,7 +72020,7 @@ Body:
     AegisName: MM_EVIL_SHADOW3
     Name: Rank C Shadow
     Level: 1
-    Hp: 20
+    Hp: 16
     Attack: 1
     Attack2: 1
     Defense: 100
@@ -81929,7 +81929,7 @@ Body:
     AegisName: IMMORTAL_CORPS1
     Name: Rank B Shadow
     Level: 1
-    Hp: 25
+    Hp: 20
     Attack: 5
     Attack2: 1
     Defense: 100
@@ -81963,7 +81963,7 @@ Body:
     AegisName: IMMORTAL_CORPS2
     Name: Rank A Shadow
     Level: 1
-    Hp: 30
+    Hp: 24
     Attack: 3
     Attack2: 3
     Defense: 100
@@ -81997,7 +81997,7 @@ Body:
     AegisName: IMMORTAL_CORPS3
     Name: Rank S Shadow
     Level: 1
-    Hp: 50
+    Hp: 40
     Attack: 1
     Attack2: 1
     Defense: 100

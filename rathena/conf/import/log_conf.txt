@@ -40,3 +40,7 @@ log_filter: 1
 // log_chat: 8 = logs only Guild messages
 // log_chat: 63 = logs everything
 log_chat: 15
+
+// Log MVP Monster Drops (Note 1)
+// Outdated. Use Pick_Log instead. But this log could be useful to keep track slayed MVPs
+log_mvpdrop: yes

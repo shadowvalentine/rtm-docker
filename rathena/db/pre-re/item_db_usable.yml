@@ -1558,7 +1558,7 @@ Body:
     Name: Concentration Potion
     Type: Usable
     Buy: 800
-    Weight: 100
+    Weight: 20
     Flags:
       BuyingStore: true
     Script: |
@@ -1568,7 +1568,7 @@ Body:
     Name: Awakening Potion
     Type: Usable
     Buy: 1500
-    Weight: 150
+    Weight: 30
     Jobs:
       Alchemist: true
       Archer: true
@@ -1602,7 +1602,7 @@ Body:
     Name: Berserk Potion
     Type: Usable
     Buy: 3000
-    Weight: 200
+    Weight: 40
     Jobs:
       Alchemist: true
       Blacksmith: true

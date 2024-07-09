@@ -286,7 +286,7 @@ Body:
     Name: Blue Gemstone
     Type: Etc
     Buy: 50
-    Weight: 50
+    Weight: 10
     Flags:
       BuyingStore: true
   - Id: 718
@@ -19333,7 +19333,7 @@ Body:
     Type: Etc
     Buy: 100
     Sell: 10
-    Weight: 2
+    Weight: 1
     Flags:
       BuyingStore: true
   - Id: 6494
@@ -24470,14 +24470,14 @@ Body:
     Type: Etc
     Buy: 60
     Sell: 5
-    Weight: 20
+    Weight: 4
   - Id: 7136
     AegisName: Acid_Bottle
     Name: Acid Bottle
     Type: Etc
     Buy: 10
     Sell: 5
-    Weight: 20
+    Weight: 4
   - Id: 7137
     AegisName: MenEater_Plant_Bottle
     Name: Plant Bottle
@@ -24496,7 +24496,7 @@ Body:
     Type: Etc
     Buy: 100
     Sell: 5
-    Weight: 200
+    Weight: 40
   - Id: 7140
     AegisName: Seed_Of_Life
     Name: Seed of Life
@@ -27706,7 +27706,7 @@ Body:
     Name: Shadow Orb
     Type: Etc
     Buy: 100
-    Weight: 50
+    Weight: 10
     Flags:
       BuyingStore: true
   - Id: 7525
@@ -31152,7 +31152,7 @@ Body:
     Type: Etc
     Buy: 5
     Sell: 2
-    Weight: 20
+    Weight: 4
     Flags:
       BuyingStore: true
   - Id: 7941

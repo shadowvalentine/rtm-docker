@@ -5019,6 +5019,9 @@ static int clif_calc_walkdelay(struct block_list *bl,int delay, char type, int64
 {
 	if (type == DMG_ENDURE || type == DMG_MULTI_HIT_ENDURE || damage <= 0)
 		return 0;
+		
+	if (bl->type == BL_PC && ((TBL_PC *)bl)->special_state.no_walk_delay)
+		return 0;
 
 	if (bl->type == BL_PC) {
 		if (battle_config.pc_walk_delay_rate != 100)

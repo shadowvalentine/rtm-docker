@@ -142,7 +142,7 @@ orpha_tut,125,43,4	script	Little Brother#Tutorial	896,{
 	set .@npc$, "[Little Brother]";
 	emotion ET_SURPRISE;
 	mes .@npc$;
-	mes "Oh," + strcharinfo(0) + " ! Did I wake you up?";
+	mes "Oh, " + strcharinfo(0) + " ! Did I wake you up?";
 	next;
 	mes "[^6666CC" + strcharinfo(0) + "^000000]";
 	mes "Uh... yeah... I guess.. what's all that noise?";
@@ -164,18 +164,8 @@ orpha_tut,125,43,4	script	Little Brother#Tutorial	896,{
 	mes .@npc$;
 	mes "Oh- Nothing!Nothing! I was talking about stats, can you explain again to me?";
 	next;
-	switch(select("Maybe later:Sure thing")) {
+	switch(select("Sure thing:Maybe later")) {
 	case 1:
-		emotion ET_DELIGHT;
-		mes .@npc$;
-		mes "Really? Well.. Ok I guess... I'll be waiting... Now how do I prepare when...";
-		close2;
-		enablenpc instance_npcname("Little Sister#Tutorial");
-		specialeffect 6,AREA,"Little Sister#Tutorial";
-		disablenpc instance_npcname("Little Brother#Tutorial");
-		set tutorialquest,1;
-		break;
-	case 2:
 		mes .@npc$;
 		mes "Yay! You're the best, so... what do I need to know?";
 		next;
@@ -241,6 +231,16 @@ orpha_tut,125,43,4	script	Little Brother#Tutorial	896,{
 		specialeffect 6,AREA,"Little Sister#Tutorial";
 		disablenpc instance_npcname("Little Brother#Tutorial");
 		break;
+	case 2:
+		emotion ET_DELIGHT;
+		mes .@npc$;
+		mes "Really? Well.. Ok I guess... I'll be waiting... Now how do I prepare when...";
+		close2;
+		enablenpc instance_npcname("Little Sister#Tutorial");
+		specialeffect 6,AREA,"Little Sister#Tutorial";
+		disablenpc instance_npcname("Little Brother#Tutorial");
+		set tutorialquest,1;
+		break;
 	}
 }
 
@@ -250,19 +250,10 @@ orpha_tut,103,53,4	script	Little Sister#Tutorial	668,{
 if (tutorialquest ==1){
 	emotion ET_THROB;
 	mes .@npc$;
-	mes "HEEEEY!" + strcharinfo(0) + "! Wanna play with me?";
+	mes "HEEEEY! " + strcharinfo(0) + "! Wanna play with me?";
 	next;
-	switch(select("I'm busy:Sure!")) {
+	switch(select("Sure!:I'm busy")) {
 	case 1:
-		emotion ET_SWEAT;
-		mes .@npc$;
-		mes "No problem! I can play with my doll, Kimi, by Myself!";
-		close2;
-		enablenpc instance_npcname("Grandpa#Tutorial");
-		specialeffect 6,AREA,"Grandpa#Tutorial";
-		disablenpc instance_npcname("Little Sister#Tutorial");
-		break;
-	case 2:
 		emotion ET_SWEAT;
 		mes .@npc$;
 		mes "I'm playing pretend with Kimi.";
@@ -311,6 +302,15 @@ if (tutorialquest ==1){
 		specialeffect 6,AREA,"Grandpa#Tutorial";
 		disablenpc instance_npcname("Little Sister#Tutorial");
 		break;
+	case 2:
+		emotion ET_SWEAT;
+		mes .@npc$;
+		mes "No problem! I can play with my doll, Kimi, by Myself!";
+		close2;
+		enablenpc instance_npcname("Grandpa#Tutorial");
+		specialeffect 6,AREA,"Grandpa#Tutorial";
+		disablenpc instance_npcname("Little Sister#Tutorial");
+		break;
 	}
 }
 }
@@ -323,20 +323,11 @@ if (tutorialquest ==1){
 	mes .@npc$;
 	mes "Hmm...This part goes here... and this one...";
 	next;
-	switch(select("Let him work:Offer Help")) {
+	switch(select("Offer Help:Let him work")) {
 	case 1:
-		emotion ET_QUESTION;
-		mes .@npc$;
-		mes "Hmm... ok this is going well... Maybe now I need this...";
-		close2;
-		enablenpc instance_npcname("Anabelle#Tutorial");
-		specialeffect 6,AREA,"Anabelle#Tutorial";
-		disablenpc instance_npcname("Grandpa#Tutorial");
-		break;
-	case 2:
 		emotion ET_HUK;
 		mes .@npc$;
-		mes "Whoa!" + strcharinfo(0) + "! You scared this old man!";
+		mes "Whoa! " + strcharinfo(0) + "! You scared this old man!";
 		next;
 		mes "[^6666CC" + strcharinfo(0) + "^000000]";
 		mes "Sorry! So what are you doing? Maybe I can help!";
@@ -378,6 +369,15 @@ if (tutorialquest ==1){
 		specialeffect 6,AREA,"Anabelle#Tutorial";
 		disablenpc instance_npcname("Grandpa#Tutorial");
 		break;
+	case 2:
+		emotion ET_QUESTION;
+		mes .@npc$;
+		mes "Hmm... Okay, this is going well... Maybe now I need this...";
+		close2;
+		enablenpc instance_npcname("Anabelle#Tutorial");
+		specialeffect 6,AREA,"Anabelle#Tutorial";
+		disablenpc instance_npcname("Grandpa#Tutorial");
+		break;
 	}
 }
 }
@@ -391,19 +391,10 @@ orpha_tut,108,66,4	script	Anabelle#Tutorial	10455,{
 	mes .@npc$;
 	mes "" + strcharinfo(0) + "! Get away from my room!";
 	next;
-	switch(select("Ok, I'm Leaving!:I just wanna talk!")) {
+	switch(select("I just wanna talk!:Ok, I'm Leaving!")) {
 	case 1:
 		mes .@npc$;
-		mes "Thanks! Now move!!!";
-		close2;
-		cutin "",255;
-		enablenpc instance_npcname("Mother#Tutorial");
-		specialeffect 6,AREA,"Mother#Tutorial";
-		disablenpc instance_npcname("Anabelle#Tutorial");
-		break;
-	case 2:
-		mes .@npc$;
-		mes "Don't you see I'm busy? I need to go help the guild!";
+		mes "Can't you see I'm busy? I need to go help the guild!";
 		next;
 		mes "[^6666CC" + strcharinfo(0) + "^000000]";
 		mes "Help your guild? With what?";
@@ -456,6 +447,15 @@ orpha_tut,108,66,4	script	Anabelle#Tutorial	10455,{
 		specialeffect 6,AREA,"Mother#Tutorial";
 		disablenpc instance_npcname("Anabelle#Tutorial");
 		break;
+	case 2:
+		mes .@npc$;
+		mes "Thanks! Now leave!!!";
+		close2;
+		cutin "",255;
+		enablenpc instance_npcname("Mother#Tutorial");
+		specialeffect 6,AREA,"Mother#Tutorial";
+		disablenpc instance_npcname("Anabelle#Tutorial");
+		break;
 	}
 }
 }
@@ -468,18 +468,8 @@ orpha_tut,112,37,3	script	Mother#Tutorial	959,{
 	mes .@npc$;
 	mes "" + strcharinfo(0) + ". I believe you'll like what I'm making here.";
 	next;
-	switch(select("Check it later:Check it now")) {
+	switch(select("Check it now:Check it later")) {
 	case 1:
-		mes .@npc$;
-		mes "Oh yeah! Your friend is waiting outside right? Take care!";
-		close2;
-		enablenpc instance_npcname("Hino Tres#TutorialA");
-		specialeffect 6,AREA,"Hino Tres#TutorialA";
-		enablenpc instance_npcname("LeaveOrphaHome1");
-		specialeffect 6,AREA,"LeaveOrphaHome1";
-		disablenpc instance_npcname("Mother#Tutorial");
-		break;
-	case 2:
 		mes .@npc$;
 		mes "It's a Scarf! since the weather has been a little wild...You need to take care of yourself.";
 		next;
@@ -528,6 +518,16 @@ orpha_tut,112,37,3	script	Mother#Tutorial	959,{
 		specialeffect 6,AREA,"LeaveOrphaHome1";
 		disablenpc instance_npcname("Mother#Tutorial");
 		break;
+	case 2:
+		mes .@npc$;
+		mes "Oh yeah! Your friend is waiting outside right? Take care!";
+		close2;
+		enablenpc instance_npcname("Hino Tres#TutorialA");
+		specialeffect 6,AREA,"Hino Tres#TutorialA";
+		enablenpc instance_npcname("LeaveOrphaHome1");
+		specialeffect 6,AREA,"LeaveOrphaHome1";
+		disablenpc instance_npcname("Mother#Tutorial");
+		break;
 	}
 }
 }
@@ -535,136 +535,136 @@ orpha_tut,112,37,3	script	Mother#Tutorial	959,{
 orpha_tut,82,36,4	script	Hino Tres#TutorialA	639,{
 
 	set .@npc$, "[Hino Tres]";
-	if (tutorialquest ==1){
-	cutin "nov_lumin01",2;
-	emotion ET_SCISSOR;
-	mes .@npc$;
-	mes "" + strcharinfo(0) + ". I believe you're late.";
-	next;
-	switch(select("Let's just go!:Apologize")) {
-	case 1:
+	if (tutorialquest == 1){
+		cutin "nov_lumin01",2;
+		emotion ET_SCISSOR;
 		mes .@npc$;
-		mes "Ever the same uh? Let's go play!";
-		close2;
-		cutin "",255;
-		enablenpc instance_npcname("Hino Tres#TutorialB");
-		specialeffect 6,AREA,"Hino Tres#TutorialB";
-		disablenpc instance_npcname("LeaveOrphaHome1");
-		disablenpc instance_npcname("Hino Tres#TutorialA");
-		break;
-	case 2:
-		mes .@npc$;
-		mes "Oh don't worry, I'm just teasing you...";
+		mes "" + strcharinfo(0) + ". I believe you're late.";
 		next;
-		mes "[^6666CC" + strcharinfo(0) + "^000000]";
-		mes "I'm sorry dude! I had a bad night overall.";
-		next;
-		emotion ET_QUESTION;
-		mes .@npc$;
-		mes "Oh you too? Seems like a lot of people last night had bad dreams.";
-		next;
-		mes "[^6666CC" + strcharinfo(0) + "^000000]";
-		mes "I wonder if it's a coincidence... anyway, You still avoiding getting a job too?";
-		next;
-		mes .@npc$;
-		mes "I wish I could just be a Novice forever! But I'm probably going to be a Swordsman, and eventually a Crusader!";
-		next;
-		mes "[^6666CC" + strcharinfo(0) + "^000000]";
-		mes "Oh those guys are cool...But I agree, I'd rather not worry about that.";
-		next;
-		emotion ET_SMILE;
-		mes .@npc$;
-		mes "Still didn't make a choice did you?";
-		next;
-		mes "[^6666CC" + strcharinfo(0) + "^000000]";
-		mes "And I don't really care about it right now. Can we just go play?";
-		next;
-		mes .@npc$;
-		mes "Wait I got us something...it's a Toy Knife, they're perfect for smacking dummies.";
-		next;
-		mes "[^6666CC" + strcharinfo(0) + "^000000]";
-		mes "Whoa! And they even make it a lot easier to attack multiple times! Only a bit weak...but perfect for us! Where did you get it?";
-		next;
-		emotion ET_SLEEPY;
-		mes .@npc$;
-		mes "Eh...I found them.";
-		next;
-		mes "[^6666CC" + strcharinfo(0) + "^000000]";
-		mes "Sure...You stole them from Wickebine right?";
-		next;
-		mes .@npc$;
-		mes "...Maybe?";
-		next;
-		mes "[^6666CC" + strcharinfo(0) + "^000000]";
-		mes "She's gonna be pissed when she sees it!";
-		next;
-		mes .@npc$;
-		mes "She's off to Lighthalzen for shopping, doubt she's coming back anytime soon.";
-		next;
-		mes "[^6666CC" + strcharinfo(0) + "^000000]";
-		mes "Let's give them  a try!";
-		close2;
-		cutin "",255;
-		getitem 1240,1;
-		set BaseLevel,BaseLevel+1;
-		enablenpc instance_npcname("Hino Tres#TutorialB");
-		specialeffect 6,AREA,"Hino Tres#TutorialB";
-		disablenpc instance_npcname("LeaveOrphaHome1");
-		disablenpc instance_npcname("Hino Tres#TutorialA");
-		break;
+		switch(select("Apologize:Let's just go!")) {
+		case 1:
+			mes .@npc$;
+			mes "Oh don't worry, I'm just teasing you...";
+			next;
+			mes "[^6666CC" + strcharinfo(0) + "^000000]";
+			mes "I'm sorry dude! I had a bad night overall.";
+			next;
+			emotion ET_QUESTION;
+			mes .@npc$;
+			mes "Oh you too? Seems like a lot of people last night had bad dreams.";
+			next;
+			mes "[^6666CC" + strcharinfo(0) + "^000000]";
+			mes "I wonder if it's a coincidence... anyway, You still avoiding getting a job too?";
+			next;
+			mes .@npc$;
+			mes "I wish I could just be a Novice forever! But I'm probably going to be a Swordsman, and eventually a Crusader!";
+			next;
+			mes "[^6666CC" + strcharinfo(0) + "^000000]";
+			mes "Oh those guys are cool...But I agree, I'd rather not worry about that.";
+			next;
+			emotion ET_SMILE;
+			mes .@npc$;
+			mes "Still didn't make a choice did you?";
+			next;
+			mes "[^6666CC" + strcharinfo(0) + "^000000]";
+			mes "And I don't really care about it right now. Can we just go play?";
+			next;
+			mes .@npc$;
+			mes "Wait I got us something...it's a Toy Knife, they're perfect for smacking dummies.";
+			next;
+			mes "[^6666CC" + strcharinfo(0) + "^000000]";
+			mes "Whoa! And they even make it a lot easier to attack multiple times! Only a bit weak...but perfect for us! Where did you get it?";
+			next;
+			emotion ET_SLEEPY;
+			mes .@npc$;
+			mes "Eh...I found them.";
+			next;
+			mes "[^6666CC" + strcharinfo(0) + "^000000]";
+			mes "Sure...You stole them from Wickebine right?";
+			next;
+			mes .@npc$;
+			mes "...Maybe?";
+			next;
+			mes "[^6666CC" + strcharinfo(0) + "^000000]";
+			mes "She's gonna be pissed when she sees it!";
+			next;
+			mes .@npc$;
+			mes "She's off to Lighthalzen for shopping, doubt she's coming back anytime soon.";
+			next;
+			mes "[^6666CC" + strcharinfo(0) + "^000000]";
+			mes "Let's give them  a try!";
+			close2;
+			cutin "",255;
+			getitem 1240,1;
+			set BaseLevel,BaseLevel+1;
+			enablenpc instance_npcname("Hino Tres#TutorialB");
+			specialeffect 6,AREA,"Hino Tres#TutorialB";
+			disablenpc instance_npcname("LeaveOrphaHome1");
+			disablenpc instance_npcname("Hino Tres#TutorialA");
+			break;
+		case 2:
+			mes .@npc$;
+			mes "Always the same huh? Let's go play!";
+			close2;
+			cutin "",255;
+			enablenpc instance_npcname("Hino Tres#TutorialB");
+			specialeffect 6,AREA,"Hino Tres#TutorialB";
+			disablenpc instance_npcname("LeaveOrphaHome1");
+			disablenpc instance_npcname("Hino Tres#TutorialA");
+			break;
+		}
 	}
-}
 }
 
 orpha_tut,63,65,4	script	Hino Tres#TutorialB	639,{
 
 	set .@npc$, "[Hino Tres]";
-	if (tutorialquest ==1){
-	cutin "nov_lumin01",2;
-	emotion ET_SCISSOR;
-	mes .@npc$;
-	mes "Now try to attack those dummies. Don't forget to equip the Toy Knife! Just double click it on your inventory!";
-	close2;
-	donpcevent instance_npcname("#DummySpawns", instance_id())+"::OnEnable";
-	set tutorialquest,2;
-	cutin "",255;
-	end;
+	if (tutorialquest == 1) {
+		cutin "nov_lumin01",2;
+		emotion ET_SCISSOR;
+		mes .@npc$;
+		mes "Now try to attack those dummies. Don't forget to equip the Toy Knife! Just double click it on your inventory!";
+		close2;
+		donpcevent instance_npcname("#DummySpawns", instance_id())+"::OnEnable";
+		set tutorialquest,2;
+		cutin "",255;
+		end;
 	}
-	if (tutorialquest ==2){
-	cutin "nov_lumin01",2;
-	emotion ET_SCRATCH;
-	mes .@npc$;
-	mes "So... what are you waiting for? Just attack and break them! Click on them to attack!";
-	close2;
-	cutin "",255;
-	end;
+	if (tutorialquest == 2) {
+		cutin "nov_lumin01",2;
+		emotion ET_SCRATCH;
+		mes .@npc$;
+		mes "So... what are you waiting for? Just attack and break them! Click on them to attack!";
+		close2;
+		cutin "",255;
+		end;
 	}
-	if (tutorialquest ==3){
-	cutin "nov_lumin01",2;
-	emotion ET_SURPRISE;
-	mes .@npc$;
-	mes "Well done! I guess they never really had a chance, since they didn't really fight back.";
-	next;
-	mes "[^6666CC" + strcharinfo(0) + "^000000]";
-	mes "Hey! I do have my own merit as well.";
-	next;
-	mes .@npc$;
-	mes "Maybe yes. Regardless, I should be going back now, Take care sleepyhead!";
-	next;
-	mes "[^6666CC" + strcharinfo(0) + "^000000]";
-	mes "Don't forget we're going to Payon tomorrow early!";
-	next;
-	emotion ET_SCISSOR;
-	mes .@npc$;
-	mes "Of course not! About time! See ya!";
-	close2;
-	cutin "",255;
-	set BaseLevel,BaseLevel+1;
-	enablenpc instance_npcname("EnterOrphaHome1");
-	specialeffect 6,AREA,"EnterOrphaHome1";
-	enablenpc instance_npcname("#ShockOrphanTutorial");
-	disablenpc instance_npcname("Hino Tres#TutorialB");
-	end;
+	if (tutorialquest == 3) {
+		cutin "nov_lumin01",2;
+		emotion ET_SURPRISE;
+		mes .@npc$;
+		mes "Well done! I guess they never really had a chance, since they didn't really fight back.";
+		next;
+		mes "[^6666CC" + strcharinfo(0) + "^000000]";
+		mes "Hey! I do have my own merit as well.";
+		next;
+		mes .@npc$;
+		mes "Maybe yes. Regardless, I should be going back now, Take care sleepyhead!";
+		next;
+		mes "[^6666CC" + strcharinfo(0) + "^000000]";
+		mes "Don't forget we're going to Payon tomorrow early!";
+		next;
+		emotion ET_SCISSOR;
+		mes .@npc$;
+		mes "Of course not! About time! See ya!";
+		close2;
+		cutin "",255;
+		set BaseLevel,BaseLevel+1;
+		enablenpc instance_npcname("EnterOrphaHome1");
+		specialeffect 6,AREA,"EnterOrphaHome1";
+		enablenpc instance_npcname("#ShockOrphanTutorial");
+		disablenpc instance_npcname("Hino Tres#TutorialB");
+		end;
 	}
 }
 
@@ -672,26 +672,26 @@ orpha_tut,108,42,3	script	Weird Person#TutorialA	10386,{
 
 	set .@npc$, "[Weird Person]";
 	cutin "ep18_bagot_01.png",2;
-	if (tutorialquest ==3){
-	mes .@npc$;
-	mes "!!!!";
-	next;
-	mes "[^6666CC" + strcharinfo(0) + "^000000]";
-	mes "Hey! Who are you??";
-	next;
-	mes .@npc$;
-	mes "Finally, Morroc is dead.";
-	next;
-	mes "[^6666CC" + strcharinfo(0) + "^000000]";
-	mes "What? Where is everyone? Who are you? Answer me!";
-	close2;
-	enablenpc instance_npcname("Scarf#Tutorial");
-	specialeffect 234,AREA,"Scarf#Tutorial";
-	disablenpc instance_npcname("EnterOrphaHome1");
-	specialeffect 16,AREA,"Weird Person#TutorialA";
-	disablenpc instance_npcname("Weird Person#TutorialA");
-	cutin "",255;
-	end;
+	if (tutorialquest == 3) {
+		mes .@npc$;
+		mes "!!!!";
+		next;
+		mes "[^6666CC" + strcharinfo(0) + "^000000]";
+		mes "Hey! Who are you??";
+		next;
+		mes .@npc$;
+		mes "Finally, Morroc is dead.";
+		next;
+		mes "[^6666CC" + strcharinfo(0) + "^000000]";
+		mes "What? Where is everyone? Who are you? Answer me!";
+		close2;
+		enablenpc instance_npcname("Scarf#Tutorial");
+		specialeffect 234,AREA,"Scarf#Tutorial";
+		disablenpc instance_npcname("EnterOrphaHome1");
+		specialeffect 16,AREA,"Weird Person#TutorialA";
+		disablenpc instance_npcname("Weird Person#TutorialA");
+		cutin "",255;
+		end;
 	}
 }
 
@@ -699,112 +699,112 @@ orpha_tut,145,67,4	script	Weird Person#TutorialB	10386,{
 
 	set .@npc$, "[Weird Person]";
 	cutin "ep18_bagot_01.png",2;
-	if (tutorialquest ==4){
-	emotion ET_SCRATCH;
-	mes .@npc$;
-	mes "You don't give up do you?";
-	next;
-	mes "[^6666CC" + strcharinfo(0) + "^000000]";
-	mes "What have you done to my family??? I'm gonna kill you!";
-	next;
-	mes .@npc$;
-	mes "You should worry about what I'm gonna do to you...";
-	next;
-	mes "[^6666CC" + strcharinfo(0) + "^000000]";
-	mes "What the hell?!";
-	next;
-	cutin "",255;
-	mes "^6666CCYou remember blacking out shortly after...Then feeling lost to the void for years...But now, it's time to wake up.^000000";
-	next;
-	mes "^6666CCLet the world remember your name.^000000";
-	close2;
-	set tutorialquest,5;
-	warp "va_orpha",13,101;
-	changebase 0;
-	.@partyrest$ = getcharid(0);
-	.@partyrest2$ = getcharid(1);
-	party_delmember(.@partyrest$,.@partyrest2$);
-	end;
+	if (tutorialquest == 4) {
+		emotion ET_SCRATCH;
+		mes .@npc$;
+		mes "You don't give up do you?";
+		next;
+		mes "[^6666CC" + strcharinfo(0) + "^000000]";
+		mes "What have you done to my family??? I'm gonna kill you!";
+		next;
+		mes .@npc$;
+		mes "You should worry about what I'm gonna do to you...";
+		next;
+		mes "[^6666CC" + strcharinfo(0) + "^000000]";
+		mes "What the hell?!";
+		next;
+		cutin "",255;
+		mes "^6666CCYou remember blacking out shortly after...Then feeling lost to the void for years...But now, it's time to wake up.^000000";
+		next;
+		mes "^6666CCLet the world remember your name.^000000";
+		close2;
+		set tutorialquest,5;
+		warp "va_orpha",13,101;
+		changebase 0;
+		.@partyrest$ = getcharid(0);
+		.@partyrest2$ = getcharid(1);
+		party_delmember(.@partyrest$,.@partyrest2$);
+		end;
 	}
 }
 
 orpha_tut,114,37,3	script	Scarf#Tutorial	10042,{
 
 	if (tutorialquest ==3){
-	mes "^6666CCYou see the scarf your mother was making for you on the floor...You must think on what to do!^000000";
-	next;
-	switch(select("Be Safe:Be Calm:Be Fast:Be Smart:Be Focused:Be Brave:Be Quiet:Be Sad:Be Uncaring")) {
-	case 1:
-		mes "^6666CCWorried about what can happen to you, you grab the scarf. You hear a strange noise...^000000";
-		close2;
-		getitem 31879,1;
-		disablenpc instance_npcname("Scarf#Tutorial");
-		donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
-		break;
-	case 2:
-		mes "^6666CCBeing calm and understanding the situation, you grab the scarf. You hear a strange noise...^000000";
-		close2;
-		getitem 31882,1;
-		disablenpc instance_npcname("Scarf#Tutorial");
-		donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
-		break;
-	case 3:
-		mes "^6666CCBeing fast as to flee from there, you grab the scarf. You hear a strange noise...^000000";
-		close2;
-		getitem 31875,1;
-		disablenpc instance_npcname("Scarf#Tutorial");
-		donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
-		break;
-	case 4:
-		mes "^6666CCQuickly watching your surrounding to not be surprised, you grab the scarf. You hear a strange noise...^000000";
-		close2;
-		getitem 31883,1;
-		disablenpc instance_npcname("Scarf#Tutorial");
-		donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
-		break;
-	case 5:
-		mes "^6666CCFocusing on what to do next, you grab the scarf. You hear a strange noise...^000000";
-		close2;
-		getitem 31881,1;
-		disablenpc instance_npcname("Scarf#Tutorial");
-		donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
-		break;
-	case 6:
-		mes "^6666CCBeing brave and not giving up, you grab the scarf. You hear a strange noise...^000000";
-		close2;
-		getitem 31877,1;
-		disablenpc instance_npcname("Scarf#Tutorial");
-		donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
-		break;
-	case 7:
-		mes "^6666CCBeing quiet and precise on movements, you grab the scarf. You hear a strange noise...^000000";
-		close2;
-		getitem 31880,1;
-		disablenpc instance_npcname("Scarf#Tutorial");
-		donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
-		break;
-	case 8:
-		mes "^6666CCFeeling sad for being alone, you grab the scarf. You hear a strange noise...^000000";
-		close2;
-		getitem 31878,1;
-		disablenpc instance_npcname("Scarf#Tutorial");
-		donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
-		break;
-	case 9:
-		mes "^6666CCNot caring about anyone, you grab the scarf and tear a hole in it. You hear a strange noise...^000000";
-		close2;
-		getitem 31876,1;
-		disablenpc instance_npcname("Scarf#Tutorial");
-		donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
-		break;
-	}
+		mes "^6666CCYou see the scarf your mother was making for you on the floor...You must think on what to do!^000000";
+		next;
+		switch(select("Be Safe:Be Calm:Be Fast:Be Smart:Be Focused:Be Brave:Be Quiet:Be Sad:Be Uncaring")) {
+			case 1:
+				mes "^6666CCWorried about what can happen to you, you grab the scarf. You hear a strange noise...^000000";
+				close2;
+				getitem 31879,1;
+				disablenpc instance_npcname("Scarf#Tutorial");
+				donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
+				break;
+			case 2:
+				mes "^6666CCBeing calm and understanding the situation, you grab the scarf. You hear a strange noise...^000000";
+				close2;
+				getitem 31882,1;
+				disablenpc instance_npcname("Scarf#Tutorial");
+				donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
+				break;
+			case 3:
+				mes "^6666CCBeing fast as to flee from there, you grab the scarf. You hear a strange noise...^000000";
+				close2;
+				getitem 31875,1;
+				disablenpc instance_npcname("Scarf#Tutorial");
+				donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
+				break;
+			case 4:
+				mes "^6666CCQuickly watching your surrounding to not be surprised, you grab the scarf. You hear a strange noise...^000000";
+				close2;
+				getitem 31883,1;
+				disablenpc instance_npcname("Scarf#Tutorial");
+				donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
+				break;
+			case 5:
+				mes "^6666CCFocusing on what to do next, you grab the scarf. You hear a strange noise...^000000";
+				close2;
+				getitem 31881,1;
+				disablenpc instance_npcname("Scarf#Tutorial");
+				donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
+				break;
+			case 6:
+				mes "^6666CCBeing brave and not giving up, you grab the scarf. You hear a strange noise...^000000";
+				close2;
+				getitem 31877,1;
+				disablenpc instance_npcname("Scarf#Tutorial");
+				donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
+				break;
+			case 7:
+				mes "^6666CCBeing quiet and precise on movements, you grab the scarf. You hear a strange noise...^000000";
+				close2;
+				getitem 31880,1;
+				disablenpc instance_npcname("Scarf#Tutorial");
+				donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
+				break;
+			case 8:
+				mes "^6666CCFeeling sad for being alone, you grab the scarf. You hear a strange noise...^000000";
+				close2;
+				getitem 31878,1;
+				disablenpc instance_npcname("Scarf#Tutorial");
+				donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
+				break;
+			case 9:
+				mes "^6666CCNot caring about anyone, you grab the scarf and tear a hole in it. You hear a strange noise...^000000";
+				close2;
+				getitem 31876,1;
+				disablenpc instance_npcname("Scarf#Tutorial");
+				donpcevent instance_npcname("#DummySpawns2", instance_id())+"::OnEnable";
+				break;
+		}
 	}
 }
 
 orpha_tut,108,36,5	script	#ShockOrphanTutorial	CLEAR_NPC,2,2,{
 	end;
 	
-OnTouch:
+	OnTouch:
 		mes "^6666CCThe house is empty... you can smell blood everywhere...You feel a terrible sense of dread. You see a weird person near the living room.^000000";
 		close2;
 		enablenpc instance_npcname("Weird Person#TutorialA");
@@ -818,66 +818,66 @@ orpha_tut,126,51,0	warp	LeaveOrphaHome2	2,2,orpha_tut,134,50
 orpha_tut,99,34,0	warp	EnterOrphaHome1	2,2,orpha_tut,108,36
 
 orpha_tut,1,1,4	script	#DummySpawns	-1,{
-OnInstanceInit:
-OnDisable:
-	disablenpc instance_npcname("#DummySpawns", instance_id());
-	end;
-OnEnable:
-	enablenpc instance_npcname("#DummySpawns", instance_id());
-	set .@map$, instance_mapname("orpha_tut");
-	.@event$ = instance_npcname("#DummySpawns")+"::OnMyMobDead";
-	killmonster .@map$, .@event$;
-	monster .@map$,66,68,"Dummy A",1725,1, .@event$;
-	monster .@map$,72,65,"Dummy B",1725,1, .@event$;
-	monster .@map$,73,57,"Dummy C",1725,1, .@event$;
-	set 'Tutorial_Mobs,3;
-	initnpctimer;
-	end;
+	OnInstanceInit:
+	OnDisable:
+		disablenpc instance_npcname("#DummySpawns", instance_id());
+		end;
+	OnEnable:
+		enablenpc instance_npcname("#DummySpawns", instance_id());
+		set .@map$, instance_mapname("orpha_tut");
+		.@event$ = instance_npcname("#DummySpawns")+"::OnMyMobDead";
+		killmonster .@map$, .@event$;
+		monster .@map$,66,68,"Dummy A",1725,1, .@event$;
+		monster .@map$,72,65,"Dummy B",1725,1, .@event$;
+		monster .@map$,73,57,"Dummy C",1725,1, .@event$;
+		set 'Tutorial_Mobs,3;
+		initnpctimer;
+		end;
 
-OnTimer1000:
-	mapannounce instance_mapname("orpha_tut"), "Attack the dummies until they are destroyed.",bc_map,"0xffff00";
-	end;
+	OnTimer1000:
+		mapannounce instance_mapname("orpha_tut"), "Attack the dummies until they are destroyed.",bc_map,"0xffff00";
+		end;
 
-OnMyMobDead:
-	set 'Tutorial_Mobs,'Tutorial_Mobs-1;
-	if ('Tutorial_Mobs < 1) {
-		set 'Tutorial_Mobs,0;
-		set tutorialquest,3;
-		mapannounce instance_mapname("orpha_tut"), "The dummies have been destroyed. Talk to Hino.",bc_map,"0xffff00";
-	}
-	end;
+	OnMyMobDead:
+		set 'Tutorial_Mobs,'Tutorial_Mobs-1;
+		if ('Tutorial_Mobs < 1) {
+			set 'Tutorial_Mobs,0;
+			set tutorialquest,3;
+			mapannounce instance_mapname("orpha_tut"), "The dummies have been destroyed. Talk to Hino.",bc_map,"0xffff00";
+		}
+		end;
 }
 
 orpha_tut,1,1,4	script	#DummySpawns2	-1,{
-OnInstanceInit:
-OnDisable:
-	disablenpc instance_npcname("#DummySpawns2", instance_id());
-	end;
-OnEnable:
-	enablenpc instance_npcname("#DummySpawns2", instance_id());
-	set .@map$, instance_mapname("orpha_tut");
-	.@event$ = instance_npcname("#DummySpawns2")+"::OnMyMobDead";
-	killmonster .@map$, .@event$;
-	monster .@map$,105,52,"Shadow",3629,1, .@event$;
-	monster .@map$,124,42,"Shadow",3629,1, .@event$;
-	monster .@map$,115,52,"Shadow",3629,1, .@event$;
-	set 'Tutorial_Mobs,3;
-	initnpctimer;
-	end;
+	OnInstanceInit:
+	OnDisable:
+		disablenpc instance_npcname("#DummySpawns2", instance_id());
+		end;
+	OnEnable:
+		enablenpc instance_npcname("#DummySpawns2", instance_id());
+		set .@map$, instance_mapname("orpha_tut");
+		.@event$ = instance_npcname("#DummySpawns2")+"::OnMyMobDead";
+		killmonster .@map$, .@event$;
+		monster .@map$,105,52,"Shadow",3629,1, .@event$;
+		monster .@map$,124,42,"Shadow",3629,1, .@event$;
+		monster .@map$,115,52,"Shadow",3629,1, .@event$;
+		set 'Tutorial_Mobs,3;
+		initnpctimer;
+		end;
 
-OnTimer1000:
-	mapannounce instance_mapname("orpha_tut"), "You feel the darkness creeping around.",bc_map,"0xffff00";
-	end;
+	OnTimer1000:
+		mapannounce instance_mapname("orpha_tut"), "You feel the darkness creeping around.",bc_map,"0xffff00";
+		end;
 
-OnMyMobDead:
-	set 'Tutorial_Mobs,'Tutorial_Mobs-1;
-	if ('Tutorial_Mobs < 1) {
-		set 'Tutorial_Mobs,0;
-		set tutorialquest,4;
-		stopnpctimer;
-		mapannounce instance_mapname("orpha_tut"), "It's time to run away!",bc_map,"0xffff00";
-		enablenpc instance_npcname("LeaveOrphaHome2");
-		enablenpc instance_npcname("Weird Person#TutorialB");
-	}
-	end;
+	OnMyMobDead:
+		set 'Tutorial_Mobs,'Tutorial_Mobs-1;
+		if ('Tutorial_Mobs < 1) {
+			set 'Tutorial_Mobs,0;
+			set tutorialquest,4;
+			stopnpctimer;
+			mapannounce instance_mapname("orpha_tut"), "It's time to run away!",bc_map,"0xffff00";
+			enablenpc instance_npcname("LeaveOrphaHome2");
+			enablenpc instance_npcname("Weird Person#TutorialB");
+		}
+		end;
 }

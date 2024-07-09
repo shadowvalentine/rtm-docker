@@ -287,24 +287,24 @@ nif_cas02,83,54,4	script	Open Coffin#deathcas3	clear_npc,{
 
 nif_cas02,57,85,4	script	Strange Coffin#deathcas5	clear_npc,{
 	
-	mes ""+hatpoints+"/90.";
+	mes ""+hatpoints+"/80.";
 	next;
-	if (hatpoints ==90){
-	if (chaosremembers ==1){
-	mes "Hey...I know you...come here.";
-	next;
-	switch(select("Yes.:No.")) {
-	case 1:
-	mes "You lie down inside the coffin and falls asleep shortly after...";
-	close2;
-	warp "balder_cell",86,91;	
-	end;
-	case 2:
-	end;
-	}
-	}
-	mes "I don't know you. Go away. Let me rest.";
-	close;
+	if (hatpoints >=80) {
+		if (chaosremembers ==1){
+			mes "Hey...I know you...come here.";
+			next;
+			switch(select("Yes.:No.")) {
+				case 1:
+					mes "You lie down inside the coffin and falls asleep shortly after...";
+					close2;
+					warp "balder_cell",86,91;	
+					end;
+				case 2:
+					end;
+			}
+		}
+		mes "I don't know you. Go away. Let me rest.";
+		close;
 	}
 	mes "Nothing happens.";
 	close;
