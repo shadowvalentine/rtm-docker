@@ -81357,7 +81357,7 @@ Body:
         StealProtected: true
       - Item: C_Sif_Hat
         Rate: 25
-      - Item: 1st_Shadow_Coffer
+      - Item: Astro_Coffer
         Rate: 300
       - Item: Valkyrie_LegendMVP
         Rate: 20
@@ -81402,7 +81402,7 @@ Body:
       - Item: SleAvatar_Card
         Rate: 100
         StealProtected: true
-      - Item: 1st_Shadow_Coffer
+      - Item: Astro_Coffer
         Rate: 300
       - Item: Valkyrie_LegendMVP
         Rate: 20
@@ -81454,7 +81454,7 @@ Body:
       - Item: Wunjo_Rune_of_Comfort
         Rate: 200
         RandomOptionGroup: manual
-      - Item: 1st_Shadow_Coffer
+      - Item: Astro_Coffer
         Rate: 300
       - Item: C_Celestial_Hat
         Rate: 25
@@ -81503,7 +81503,7 @@ Body:
       - Item: SiegAvatar_Card
         Rate: 100
         StealProtected: true
-      - Item: 1st_Shadow_Coffer
+      - Item: Astro_Coffer
         Rate: 300
       - Item: Valkyrie_LegendMVP
         Rate: 20
@@ -81853,7 +81853,7 @@ Body:
         StealProtected: true
       - Item: OdinBless
         Rate: 10
-      - Item: 1st_Shadow_Coffer
+      - Item: Astro_Coffer
         Rate: 400
       - Item: Thurisaz_Rune_of_Giants
         Rate: 200
