@@ -13719,7 +13719,7 @@ Body:
     Type: Usable
     Buy: 1000
     Sell: 10
-    Weight: 500
+    Weight: 100
     Flags:
       BuyingStore: true
   - Id: 12718
@@ -13728,7 +13728,7 @@ Body:
     Type: Usable
     Buy: 4000
     Sell: 10
-    Weight: 500
+    Weight: 100
     Flags:
       BuyingStore: true
   - Id: 12719
@@ -13736,7 +13736,7 @@ Body:
     Name: Poison_Oblivion
     Type: Usable
     Buy: 2
-    Weight: 500
+    Weight: 100
     Flags:
       BuyingStore: true
   - Id: 12720
@@ -13745,7 +13745,7 @@ Body:
     Type: Usable
     Buy: 3000
     Sell: 10
-    Weight: 500
+    Weight: 100
     Flags:
       BuyingStore: true
   - Id: 12721
@@ -13754,7 +13754,7 @@ Body:
     Type: Usable
     Buy: 5000
     Sell: 10
-    Weight: 500
+    Weight: 100
     Flags:
       BuyingStore: true
   - Id: 12722
@@ -13763,7 +13763,7 @@ Body:
     Type: Usable
     Buy: 2000
     Sell: 10
-    Weight: 500
+    Weight: 100
     Flags:
       BuyingStore: true
   - Id: 12723
@@ -13771,7 +13771,7 @@ Body:
     Name: Poison_Laughing
     Type: Usable
     Buy: 2
-    Weight: 500
+    Weight: 100
     Flags:
       BuyingStore: true
   - Id: 12724
@@ -13779,7 +13779,7 @@ Body:
     Name: Poison_Fatigue
     Type: Usable
     Buy: 2
-    Weight: 500
+    Weight: 100
     Flags:
       BuyingStore: true
   - Id: 12725
