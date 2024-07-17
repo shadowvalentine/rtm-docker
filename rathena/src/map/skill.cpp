@@ -8478,7 +8478,7 @@ int skill_castend_nodamage_id(struct block_list *src, struct block_list *bl, uin
 		break;
 	case SP_SOULREAPER:
 		clif_skill_nodamage(src, bl, skill_id, skill_lv,
-												sc_start(src, bl, SC_SOULSHADOW, 100, skill_lv, 120000));
+												sc_start(src, bl, SC_SOULSHADOW, 100, skill_lv, skill_get_time(skill_id, 1)));
 		break;
 	case LG_SHIELDSPELL:
 		if (skill_lv == 1)

@@ -9760,15 +9760,15 @@ Body:
     CastCancel: true
     CastTime:
       - Level: 1
-        Time: 500
+        Time: 200
       - Level: 2
-        Time: 1000
+        Time: 400
       - Level: 3
-        Time: 1500
+        Time: 600
       - Level: 4
-        Time: 2000
+        Time: 800
       - Level: 5
-        Time: 2500
+        Time: 1000
     AfterCastActDelay:
       - Level: 1
         Time: 1000
@@ -9782,25 +9782,25 @@ Body:
         Time: 1000
     Duration1:
       - Level: 1
-        Time: 45000
-      - Level: 2
-        Time: 50000
-      - Level: 3
-        Time: 60000
-      - Level: 4
-        Time: 65000
-      - Level: 5
-        Time: 70000
-      - Level: 6
         Time: 75000
-      - Level: 7
+      - Level: 2
         Time: 80000
-      - Level: 8
+      - Level: 3
         Time: 85000
-      - Level: 9
+      - Level: 4
         Time: 90000
-      - Level: 10
+      - Level: 5
         Time: 95000
+      - Level: 6
+        Time: 100000
+      - Level: 7
+        Time: 105000
+      - Level: 8
+        Time: 110000
+      - Level: 9
+        Time: 115000
+      - Level: 10
+        Time: 120000
     Cooldown: 60000
     FixedCastTime:
       - Level: 1
@@ -13206,7 +13206,7 @@ Body:
       NoDamage: true
     Hit: Single
     HitCount: 1
-    Duration1: 20000
+    Duration1: 40000
     Cooldown: 20000
     Requires:
       SpRateCost: 55
@@ -20861,7 +20861,7 @@ Body:
     Element: Holy
     SplashArea: 15
     CastCancel: true
-    CastTime: 5000
+    CastTime: 2500
     Duration1: 120000
     Cooldown: 10000
     Requires:
@@ -25500,7 +25500,7 @@ Body:
     Hit: Single
     HitCount: 1
     AfterCastActDelay: 1000
-    Duration1: 30000
+    Duration1: 45000
     Cooldown: 30000
     Requires:
       SpCost:
@@ -25536,11 +25536,11 @@ Body:
     Hit: Single
     HitCount: 1
     CastCancel: true
-    CastTime: 3000
-    AfterCastActDelay: 3000
+    CastTime: 1500
+    AfterCastActDelay: 1500
     Duration1: 60000
     Cooldown: 90000
-    FixedCastTime: 2000
+    FixedCastTime: 500
     Requires:
       SpRateCost: -20
       SpCost:
@@ -30648,7 +30648,7 @@ Body:
     SplashArea: 1
     CastCancel: true
     AfterCastActDelay: 1000
-    Duration2: 3000
+    Duration2: 4000
     Cooldown: 3000
     Requires:
       SpCost: 15
@@ -31215,27 +31215,7 @@ Body:
     HitCount: 1
     CastCancel: true
     CastTime: 10000
-    Duration1:
-      - Level: 1
-        Time: 30000
-      - Level: 2
-        Time: 30000
-      - Level: 3
-        Time: 40000
-      - Level: 4
-        Time: 50000
-      - Level: 5
-        Time: 60000
-      - Level: 6
-        Time: 20000
-      - Level: 7
-        Time: 30000
-      - Level: 8
-        Time: 40000
-      - Level: 9
-        Time: 50000
-      - Level: 10
-        Time: 60000
+    Duration1: 160000
     Duration2:
       - Level: 1
         Time: 2000
