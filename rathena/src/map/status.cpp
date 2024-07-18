@@ -8418,7 +8418,14 @@ static unsigned short status_calc_speed(struct block_list *bl, struct status_cha
 		if (sc->data[SC_SPEEDUP1]) // !FIXME: used both by NPC_AGIUP and Speed Potion script
 			val = max(val, sc->data[SC_SPEEDUP1]->val1);
 		if (sc->data[SC_INCREASEAGI])
+		{
+			int buffAmount = 25;
+			if (sc->data[SC_INCREASEAGI])
+			{
+				buffAmount += 10;
+			}
 			val = max(val, 25);
+		}
 		if (sc->data[SC_WINDWALK])
 			val = max(val, 2 * sc->data[SC_WINDWALK]->val1);
 		if (pc_checkskill(sd, AL_DEMONBANE) > 0)
@@ -8446,7 +8453,14 @@ static unsigned short status_calc_speed(struct block_list *bl, struct status_cha
 		if (sc->data[SC_PARALYSE] && sc->data[SC_PARALYSE]->val3 == 0)
 			val = max(val, 50);
 		if (sc->data[SC_HOVERING])
-			val = max(val, 10);
+		{
+			int buffAmount = 10;
+			if (sc->data[SC_INCREASEAGI])
+			{
+				buffAmount += 25;
+			}
+			val = max(val, buffAmount);
+		}
 		if (sc->data[SC_GN_CARTBOOST])
 			val = max(val, sc->data[SC_GN_CARTBOOST]->val2);
 		if (sc->data[SC_SWINGDANCE])

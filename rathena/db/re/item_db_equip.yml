@@ -115613,6 +115613,7 @@ Body:
     Script: |
       bonus bDef,10;
       bonus bMdef,4;
+      bonus bPerfectHide;
       skill "BS_HAMMERFALL",3;
       skill "AL_INCAGI",10;
       skill "TF_HIDING",10;
@@ -115826,6 +115827,7 @@ Body:
       bonus bDef,10;
       bonus bMdef,5;
       bonus bAllStats,2;
+      bonus bPerfectHide;
       skill "AL_INCAGI",10;
       skill "BS_HAMMERFALL",3;
       skill "AL_WARP",4;
