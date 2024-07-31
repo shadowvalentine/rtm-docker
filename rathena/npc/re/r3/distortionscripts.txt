@@ -92,16 +92,17 @@ tha_para07,151,21,1	script	Light#thanatos4	10043,{
 }
 
 tha_para08,1,1,4	script	ThanatosSpawns#1	CLEAR_NPC,{
-OnNPCKillEvent:
-if( killedrid == 2649 )
-	announce "Thanatos has fallen in battle and his soul is now free. The Paradise will banish everyone in 15 seconds.",bc_blue|bc_map;
-	initnpctimer;
-    end;
-OnTimer15000:
-	addrid(1);
-	warp "tha_t01",149,100;
-	stopnpctimer
-	end;
+	OnNPCKillEvent:
+		if( killedrid == 2649 ) {
+			announce "Thanatos has fallen in battle and his soul is now free. The Paradise will banish everyone in 15 seconds.",bc_blue|bc_map;
+			initnpctimer;
+		}
+		end;
+	OnTimer15000:
+		addrid(1);
+		warp "tha_t01",149,100;
+		stopnpctimer
+		end;
 }
 
 -	script	Respawn#abyss_04	,{
