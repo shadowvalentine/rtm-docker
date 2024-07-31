@@ -37,6 +37,13 @@ log_db_db: rathena_re_db
 log_codepage:
 log_login_db: loginlog
 
+// MySQL Web Server
+web_server_ip: rtm-mariadb-1.cd6mcocisrh5.ap-southeast-2.rds.amazonaws.com
+web_server_port: 3306
+web_server_id: prmorroc
+web_server_pw: morrocpr123
+web_server_db: rathena_re_db
+
 //Makes server log selected message types to a file in the /log/ folder
 //1: Log Warning Messages
 //2: Log Error and SQL Error messages.
