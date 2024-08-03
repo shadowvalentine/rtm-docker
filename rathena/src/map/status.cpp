@@ -6656,7 +6656,7 @@ void status_calc_bl_main(struct block_list *bl, /*enum scb_flag*/ int flag)
 			status->amotion = cap_value(amotion, maxaspd, 2000);
 			if (sc && sc->data[SC_BERSERK])
 			{
-				status->amotion = cap_value(amotion, 50, 2000);
+				status->amotion = cap_value(amotion, 70, 2000);
 
 			} // 199 max possible ASPD
 			status->adelay = 2 * status->amotion;
