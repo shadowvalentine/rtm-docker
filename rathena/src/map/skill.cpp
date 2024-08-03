@@ -8467,7 +8467,6 @@ int skill_castend_nodamage_id(struct block_list *src, struct block_list *bl, uin
 		if ((tsc && tsc->data[SC_BERSERK]))
 		{
 			status_change_end(src, SC_BERSERK, INVALID_TIMER);
-			sc_start(src, src, SC_TENSIONRELAX, 100, skill_lv, 1);
 			sc_start(src, src, SC_REBOUND, 1000, skill_lv, 10000);
 		}
 		else
