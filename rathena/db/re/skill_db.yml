@@ -18368,15 +18368,15 @@ Body:
     AfterCastActDelay: 500
     Cooldown:
       - Level: 1
-        Time: 2000
+        Time: 4000
       - Level: 2
-        Time: 2500
+        Time: 3500
       - Level: 3
         Time: 3000
       - Level: 4
-        Time: 3500
+        Time: 2500
       - Level: 5
-        Time: 4000
+        Time: 2000
     Requires:
       SpCost:
         - Level: 1
