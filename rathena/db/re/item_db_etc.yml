@@ -32482,15 +32482,23 @@ Body:
     Name: Silver Bullet
     Type: Ammo
     SubType: Bullet
-    Buy: 5
+    Buy: 20
     Weight: 1
-    Attack: 15
+    Attack: 2
     Jobs:
-      Gunslinger: true
-      Rebellion: true
+      SuperNovice: true
     Locations:
       Ammo: true
-    EquipLevelMin: 1
+    EquipLevelMin: 50
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      TradePartner: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
     Script: |
       bonus bAtkEle,Ele_Holy;
   - Id: 13222
@@ -32649,15 +32657,23 @@ Body:
     Name: Blind Bullet
     Type: Ammo
     SubType: Bullet
-    Buy: 10
+    Buy: 20
     Weight: 1
-    Attack: 20
+    Attack: 2
     Jobs:
-      Gunslinger: true
-      Rebellion: true
+      SuperNovice: true
     Locations:
       Ammo: true
-    EquipLevelMin: 1
+    EquipLevelMin: 50
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      TradePartner: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
     Script: |
       bonus bAtkEle,Ele_Dark;
       bonus2 bAddEff,Eff_Blind,500;

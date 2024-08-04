@@ -1,6 +1,6 @@
 ///Judge HQ NPCs
 
--	shop	judgeshop	-1,13200:250,13201:5000,13215:7000,13216:7000.
+-	shop	judgeshop	-1,13200:250,13201:5000,13215:7000,13216:7000,13221:7000,13232:7000.
 
 prt_cas,261,320,4	script	Quartermaster#judge	10182,{
 	cutin "ep16_tes01",2;
