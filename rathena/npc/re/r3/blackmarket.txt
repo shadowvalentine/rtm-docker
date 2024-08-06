@@ -30,7 +30,7 @@
 	mes "We have everything you need!";
 	emotion ET_MONEY;
 	close2;
-	switch(select("Catalogue and Skill Materials:Manuals:Ammo and Throwing:Poison Inventory:Cooking Inventory:Unique Trinkets:Nothing:Im Important")) {
+	switch(select("Catalogue and Skill Materials:Manuals:Ammo and Throwing:Poison Inventory:Cooking Inventory:Unique Trinkets:Nothing:I'm Important")) {
 	case 1:
 		callshop "blackmarketskill",1;
 		cutin "",255;
@@ -65,7 +65,7 @@
 	if (#darkmarket ==1){
 		emotion ET_SURPRISE;
 	mes .@npc$;
-		mes "Oh. Please do take a look at our unique selection of items! You are a very valuable customer of ours!";
+		mes "Oh, a VIP! Please do take a look at our unique selection of items!";
 		close2;	
 		callshop "darkmarket",1;
 		end;
@@ -121,23 +121,23 @@ nameless_i,258,216,4	script	Dark Market#namelessdst	10380,{
 	mes "It's time for me to leave this island. I need to change my line of business.";
 	next;
 	mes .@npc$;
-	mes "A Dark Market is not very attractive... I need to rebrand...hey...why don't you help me with it?";
+	mes "A Dark Market is not very attractive... I need to rebrand... Hey... Why don't you help me with it?";
 	next;
 	mes .@npc$;
-	mes "If you invest 5.000.000z in my development, I'll give you a cool card, better than any other card. So you can buy cool stuff from my work in the future. What do you say?";
+	mes "If you invest 1.000.000z in my development, I'll give you a cool card, better than any other card. So you can buy cool stuff from my work in the future. What do you say?";
 	next;
 	switch(select("Deal:No way")) {
 	case 1:
-	if (zeny < 5000000){
+	if (zeny < 1000000){
 				mes .@npc$;
 				mes "Sorry, You don't have enough zeny. Go get some and bring it to me!";
 				close;
 				}
-				set zeny,zeny-5000000;
+				set zeny,zeny-1000000;
 				getitem 14737,1;
 				set #darkmarket,1;
 				mes .@npc$;
-				mes "Thank you kind sir! You won't regret it! I'll always remember it. You can use this if you visit my new line of work someday and I PROMISE it'll be worth it!";
+				mes "Thank you kind sir! You won't regret it! I'll always remember this. You can use this if you visit my new line of work someday and I PROMISE it'll be worth it!";
 				close;
 				end;
 				break;
