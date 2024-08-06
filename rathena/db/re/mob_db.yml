@@ -60479,7 +60479,7 @@ Body:
         Rate: 100
         RandomOptionGroup: manual
       - Item: Eyes_Njord
-        Rate: 200
+        Rate: 50
         RandomOptionGroup: manual
   - Id: 2658
     AegisName: C3_SKELETON_GENERAL
