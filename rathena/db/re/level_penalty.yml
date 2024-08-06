@@ -35,8 +35,18 @@ Header:
 Body:
   - Type: Exp
     LevelDifferences:
-      - Difference: 16
+      - Difference: 21
         Rate: 1
+      - Difference: 20
+        Rate: 130
+      - Difference: 19
+        Rate: 130
+      - Difference: 18
+        Rate: 130
+      - Difference: 17
+        Rate: 130
+      - Difference: 16
+        Rate: 130
       - Difference: 15
         Rate: 130
       - Difference: 14
