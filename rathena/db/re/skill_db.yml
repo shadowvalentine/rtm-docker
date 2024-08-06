@@ -14530,15 +14530,15 @@ Body:
       - Level: 5
         Time: 1000
       - Level: 6
-        Time: 40000
+        Time: 90000
       - Level: 7
-        Time: 50000
+        Time: 100000
       - Level: 8
-        Time: 60000
+        Time: 110000
       - Level: 9
-        Time: 70000
+        Time: 120000
       - Level: 10
-        Time: 80000
+        Time: 130000
     Requires:
        SpCost: 5
        Ammo:
