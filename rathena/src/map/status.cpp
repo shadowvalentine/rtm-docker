@@ -12007,9 +12007,7 @@ int status_change_start(struct block_list *src, struct block_list *bl, enum sc_t
 			// HP healing is performing after the calc_status call.
 			// Val2 holds HP penalty
 			if (!val4)
-				val4 = 10 + status->agi * 5;
-			if (!val4)
-				val4 = 10 + status->agi * 5; // Val4 holds damage interval
+				val4 = 10 + status->vit * 3; // Val4 holds damage interval
 			val3 = tick / val4;						 // val3 holds skill duration
 			tick_time = val4;							 // [GodLesZ] tick time
 			break;

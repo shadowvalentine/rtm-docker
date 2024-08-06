@@ -35978,10 +35978,10 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Sword_of_Conquest
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: sword
       - Item: Surt_Shawl
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: garment
       - Item: Perfect_TuxedoMVP
         Rate: 20
@@ -36028,13 +36028,13 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Bow of Famine
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: bow
       - Item: Axe_Famine
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: axe
       - Item: Surt_Shoes
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: shoes
       - Item: Perfect_TuxedoMVP
         Rate: 20
@@ -36082,10 +36082,10 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Black_War
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: dagger
       - Item: Diabolus_Robes
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: armor
       - Item: Perfect_TuxedoMVP
         Rate: 20
@@ -36133,7 +36133,7 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Diabolus_Armor
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: armor
       - Item: Perfect_TuxedoMVP
         Rate: 20
@@ -59691,13 +59691,13 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Mercury_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
       - Item: Venus_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
       - Item: Mars_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
   - Id: 2642
     AegisName: C2_STEEL_CHONCHON
@@ -59740,13 +59740,13 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Mars_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
       - Item: Saturn_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
       - Item: Jupiter_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
   - Id: 2643
     AegisName: C3_STAPO
@@ -59789,13 +59789,13 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Saturn_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
       - Item: Jupiter_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
       - Item: Neptune_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
   - Id: 2644
     AegisName: C4_STALACTIC_GOLEM
@@ -59838,13 +59838,13 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Neptune_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
       - Item: Mercury_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
       - Item: Venus_Cape
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: garment
   - Id: 2645
     AegisName: C5_STAINER
@@ -59891,7 +59891,7 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Devil_Fang
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: dagger
   - Id: 2646
     AegisName: C1_SPORE
@@ -59935,7 +59935,7 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Alto_Flagelo
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: bow
   - Id: 2647
     AegisName: C2_SOLIDER
@@ -59979,7 +59979,7 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Kaiser_Lance
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: spear
   - Id: 2648
     AegisName: C3_SOLDIER_SKELETON
@@ -60024,7 +60024,7 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Lingering_Sadness
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: sword
   - Id: 2649
     AegisName: C4_SOLDIER_SKELETON
@@ -60132,13 +60132,13 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Genesis_Bright
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: armor
       - Item: Genesis_Raid
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: armor
       - Item: Genesis_Sky
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: armor
       - Item: Enriched_Oridecon
         Rate: 100
@@ -60189,13 +60189,13 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Apocalype_Scale
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: armor
       - Item: Apocalype_Occult
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: armor
       - Item: Apocalype_Hell
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: armor
       - Item: Jewel_Elunium
         Rate: 25
@@ -60249,7 +60249,7 @@ Body:
       - Item: 4th_Shadow_Coffer
         Rate: 600
       - Item: World_Eater_Garb
-        Rate: 10
+        Rate: 50
         RandomOptionGroup: armor
   - Id: 2653
     AegisName: C3_SNAKE
@@ -60288,7 +60288,7 @@ Body:
         Rate: 100
         RandomOptionGroup: dracoorb
       - Item: SkyspearCOrb
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: dracomvp
   - Id: 2654
     AegisName: C4_SMOKIE
@@ -60362,10 +60362,10 @@ Body:
       - Item: Dream_Shard
         Rate: 5000
       - Item: Eyes_Hearts
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: manual
       - Item: Dream_Armor
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: armor
       - Item: Dream_Pouch
         Rate: 100
@@ -60413,10 +60413,10 @@ Body:
       - Item: Distortion_Shard
         Rate: 10000
       - Item: Eyes_Souls
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: manual
       - Item: Dream_Shoes
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: manual
       - Item: Dream_Pouch
         Rate: 100
@@ -60464,22 +60464,22 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Fate_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Flaming_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Frozen_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Wind_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Nature_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Eyes_Njord
-        Rate: 5
+        Rate: 50
         RandomOptionGroup: manual
   - Id: 2658
     AegisName: C3_SKELETON_GENERAL
@@ -60525,22 +60525,22 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Fate_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Flaming_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Frozen_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Wind_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Nature_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Dream_Manteau
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: garment
   - Id: 2659
     AegisName: C4_SKELETON_GENERAL
@@ -60652,22 +60652,22 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Fate_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Flaming_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Frozen_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Wind_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Nature_Weaver
-        Rate: 25
+        Rate: 100
         RandomOptionGroup: manual
       - Item: Dream_Ring
-        Rate: 50
+        Rate: 200
         RandomOptionGroup: manual
   - Id: 2661
     AegisName: C1_SIROMA
@@ -65672,7 +65672,7 @@ Body:
       - Item: Distortion_Essence
         Rate: 725
       - Item: Emperium_Armor
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: armor
       - Item: 4th_Shadow_Coffer
         Rate: 300
@@ -65721,7 +65721,7 @@ Body:
       - Item: Enriched_Elunium
         Rate: 200
       - Item: Emperium_Boots
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: shoes
       - Item: 4th_Shadow_Coffer
         Rate: 300
@@ -65772,7 +65772,7 @@ Body:
       - Item: Absolute_Arrow
         Rate: 50
       - Item: Emperium_Ring
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: accessory
       - Item: Gu_Defender_Card
         Rate: 100
@@ -65818,7 +65818,7 @@ Body:
       - Item: Enriched_Oridecon
         Rate: 200
       - Item: Emperium_Manteau
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: garment
       - Item: 4th_Shadow_Coffer
         Rate: 300
@@ -65861,7 +65861,7 @@ Body:
       - Item: Distortion_Shard
         Rate: 10000
       - Item: King_of_Diamonds
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: deck
       - Item: 4th_Shadow_Coffer
         Rate: 300
@@ -65912,7 +65912,7 @@ Body:
       - Item: 4th_Shadow_Coffer
         Rate: 300
       - Item: Guiding_Dagger
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: dagger
       - Item: HD_Bradium
         Rate: 200
@@ -65922,7 +65922,7 @@ Body:
         Rate: 200
         RandomOptionGroup: manual
       - Item: Gu_Master_Card
-        Rate: 100
+        Rate: 300
         StealProtected: true
   - Id: 2790
     AegisName: C2_ISIS
@@ -75783,10 +75783,10 @@ Body:
         Rate: 100
         StealProtected: true
       - Item: Asgard_BrokenWall
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: shield
       - Item: Dandelion_Chains
-        Rate: 100
+        Rate: 300
         RandomOptionGroup: accessory
       - Item: Perfect_TuxedoMVP
         Rate: 20

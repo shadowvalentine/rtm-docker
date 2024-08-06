@@ -248,7 +248,6 @@ job_cru	mapflag	noteleport
 job_duncer	mapflag	noteleport
 job_monk	mapflag	noteleport
 job_sage	mapflag	noteleport
-mag_dun01	mapflag	noteleport
 mag_dun02	mapflag	noteleport
 monk_test	mapflag	noteleport
 quiz_test	mapflag	noteleport
@@ -367,7 +366,6 @@ ra_temsky	mapflag	noteleport
 que_rachel	mapflag	noteleport
 que_thor	mapflag	noteleport
 thor_camp	mapflag	noteleport
-thor_v01	mapflag	noteleport
 thor_v02	mapflag	noteleport
 thor_v03	mapflag	noteleport
 ve_in	mapflag	noteleport
@@ -844,7 +842,6 @@ orpha_tut	mapflag	noteleport
 moc_dun01	mapflag	noteleport
 moc_dun02	mapflag	noteleport
 moc_dun03	mapflag	noteleport
-lost_dun01	mapflag	noteleport
 lost_dun02	mapflag	noteleport
 lost_dun03	mapflag	noteleport
 skydun3	mapflag	noteleport
