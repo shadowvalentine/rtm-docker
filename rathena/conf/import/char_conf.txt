@@ -25,7 +25,7 @@ login_port: 6900
 // Character Server IP
 // The IP address which clients will use to connect.
 // Set this to what your server's public IP address is.
-char_ip: localhost
+char_ip: rtm-nlb-b4c24c5d69b43d73.elb.ap-southeast-2.amazonaws.com
 
 // Character Server Port
 char_port: 6121
