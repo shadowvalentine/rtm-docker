@@ -318,23 +318,23 @@ va_orpha,263,378,5	script	Weaver of Dreams#RTME	422,{
         switch(select("Dream...:Nightmare...:Mindweaver...:Sleepwalker...:Orphan...")){
           case 1: // Dream case: 6 options, 0-5
             set .@Enchant,$RTMEnchant[select("Dream of Power:Dream of Speed:Dream of Life:Dream of Skills:Dream of Wisdom:Dream of Fate")-1];
-            end;
+            break;
 
           case 2: // Nightmare : 4 options, 6-9
             set .@Enchant,$RTMEnchant[6 + select("Nightmare Slayer:Nightmare Watcher:Nightmare Keeper:Nightmare Visitor")-1];
-            end;
+            break;
 
           case 3: // Mindweaver: 5 options
             set .@Enchant,$RTMEnchant[10 + select("Mindweaver Evasion:Mindweaver Precision:Mindweaver Efficiency:Mindweaver Striker:Mindwweaver Piercer")-1];
-            end;
+            break;
 
           case 4: // Sleepwalker: 3 options
             set .@Enchant,$RTMEnchant[15 + select("Sleepwalker Mobility:Sleepwalker Vitality:Sleepwalker Essence")-1];
-            end;
+            break;
 
           case 5: // Orphan: 2 options
             set .@Enchant,$RTMEnchant[18 + select("Awakened Orphan:Eternal Orphan")-1];
-            end;
+            break;
         }
 
         delequip .@Eq;
