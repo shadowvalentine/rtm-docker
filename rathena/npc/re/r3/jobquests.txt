@@ -2033,36 +2033,35 @@ pay_fild09,334,264,5	script	Wandering Raider#questchange	966,{
 			close;
 	}
 	if (BaseJob == Job_Novice && raiderquest ==1){
-	if (JobLevel < 10){
-	mes .@npc$;
-	mes "You need to train first. Why not get to job level 10?";
-	close;
-	}
+		if (JobLevel < 10){
+			mes .@npc$;
+			mes "You need to train first. Why not get to job level 10?";
+			close;
+		}
 		switch(select("I really want to be a Raider.:Nevermind.")) {
-		case 1:
-		mes .@npc$;
-		mes "Anyone can wield a spear. It's a simple weapon.";
-		next;
-		mes .@npc$;
-		mes "You can choose to be just another one, or to do your best and fight the toughest fights. Fights that anyone else would flee from.";
-		next;
-		mes .@npc$;
-		mes "You may be a Raider, but you're just another warrior. Will you be the best I wonder?";
-		close2;
-		atcommand "@job 1";
-		specialeffect2 234;
-		specialeffect2 834;
-		getitem 1410,1;
-		set firstjob,1;
-		set raiderquest,2;
-		set raiderjob,1;
-		end;
-	case 2:
-	mes .@npc$;
-	mes "Very well. I don't judge you. I only pity the weak.";
-	close;
-	end;
-	
+			case 1:
+				mes .@npc$;
+				mes "Anyone can wield a spear. It's a simple weapon.";
+				next;
+				mes .@npc$;
+				mes "You can choose to be just another one, or to do your best and fight the toughest fights. Fights that anyone else would flee from.";
+				next;
+				mes .@npc$;
+				mes "You may be a Raider, but you're just another warrior. Will you be the best I wonder?";
+				close2;
+				atcommand "@job 1";
+				specialeffect2 234;
+				specialeffect2 834;
+				getitem 1410,1;
+				set firstjob,1;
+				set raiderquest,2;
+				set raiderjob,1;
+				end;
+			case 2:
+				mes .@npc$;
+				mes "Very well. I don't judge you. I only pity the weak.";
+				close;
+				end;
 		}
 	}
 	if (BaseJob == Job_Novice) {
