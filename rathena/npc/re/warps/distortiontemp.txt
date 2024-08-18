@@ -1252,7 +1252,7 @@ dicast_in,359,201,8	script	Master of Balder	4_ep18_tamarin,{
 	soundeffect "cd_argutus_vita.wav", 0;
 	delitem 1632,1;
 	delitem 1636,1;
-	getitem2 1632,1,1,0,0,1633,1634,1635,1636;
+	getitembound2 1632,1,1,0,0,1633,1634,1635,1636,Bound_Account;
 	achievementcomplete(200092);
 	set baldereye, 2;
 	set temporalwarp, 4;
