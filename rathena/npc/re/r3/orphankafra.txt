@@ -1400,7 +1400,7 @@ va_orpha,265,303,4	script	Kafra Allysia	894,{
 		}
 	cutin "",255;
 	end;
-}
+
 		case 7:
 			mes "[Kafra Allysia]";
 			mes "Let me know if you change your mind!";
